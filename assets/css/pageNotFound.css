@@ -1,0 +1,49 @@
+
+.generic{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #000;
+    color: aliceblue;
+    
+}
+
+.generic .logo img{
+    max-height: 170px;
+}
+.generic .infor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.generic .infor h5{
+    color:#a7a7a7;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+.generic .infor h1{
+    font-size: 40px;
+}
+.generic .infor button{
+    background-color: transparent;
+    color: #fff;
+    border: 1px var(--citrine) solid;
+    padding: 12px 30px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+.generic .infor button:hover{
+    background: var(--citrine);
+	color: var(--xiketic);
+	border: 2px #e2d703 solid;
+}
+.generic .infor a{
+    color: #fff;
+}
+
+.generic .infor h4:hover{
+    text-decoration: underline;
+}
