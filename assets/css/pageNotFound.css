@@ -11,7 +11,8 @@
 }
 
 .generic .logo img{
-    max-height: 170px;
+    margin: 40px auto;
+    max-height: 110px;
 }
 .generic .infor{
     display: flex;
@@ -47,3 +48,9 @@
 .generic .infor h4:hover{
     text-decoration: underline;
 }
+/* @media (max-width:405px) {
+    h1{
+        font-size: 10px;
+        color: #e2d703;
+    }
+} */
