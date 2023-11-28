@@ -8,28 +8,22 @@
   <title>netflop - Vietnam's leading movie website</title>
 
 
-  <!-- icon -->
-  <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
-  
-  <!-- 
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- icon -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<!-- favicon -->
+<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+<!-- custom css link-->
+<link rel="stylesheet" href="./assets/css/style.css" />
+<!--google font link-->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body id="top">
@@ -92,10 +86,22 @@
         <!-- <a href="login.html"
             ><button class="btn btn-primary">Sign in</button></a
           > -->
-        <div class="avt-user">
-          <i class="fa-solid fa-user"></i>
-          <span>Đạt</span>
+
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">
+            <div class="avt-user">
+              <i class="fa-solid fa-user"></i>
+              <span>Đạt</span>
+            </div>
+          </button>
+          
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Log Out</a>
+            <a href="#">History</a>
+
+          </div>
         </div>
+
       </div>
 
       <button class="menu-open-btn" data-menu-open-btn>
@@ -119,7 +125,7 @@
 
         <ul class="navbar-list">
           <li>
-            <a href="./index.html" class="navbar-link">Home</a>
+            <a href="./index-with-login.html" class="navbar-link">Home</a>
           </li>
 
           <li>
@@ -260,10 +266,11 @@
           <ul class="movies-list has-scrollbar">
             <li>
               <div class="movie-card">
-                <a href="./movie-details.html">
+                <a href="./movie-details.html" class="movie-card_link">
                   <figure class="card-banner">
                     <img src="./assets/images/upcoming-1.png" alt="The Northman movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -299,6 +306,7 @@
                     <img src="./assets/images/upcoming-2.png"
                       alt="Doctor Strange in the Multiverse of Madness movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -335,6 +343,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/upcoming-3.png" alt="Memory movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -370,6 +379,7 @@
                     <img src="./assets/images/upcoming-4.png"
                       alt="The Unbearable Weight of Massive Talent movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -509,6 +519,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-1.png" alt="Sonic the Hedgehog 2 movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -543,6 +554,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-2.png" alt="Morbius movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -577,6 +589,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-3.png" alt="The Adam Project movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -611,6 +624,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-4.png" alt="Free Guy movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -645,6 +659,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-5.png" alt="The Batman movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -679,6 +694,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-6.png" alt="Uncharted movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -713,6 +729,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-7.png" alt="Death on the Nile movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -747,6 +764,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/movie-8.png" alt="The King's Man movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -795,6 +813,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/series-1.png" alt="Moon Knight movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -829,6 +848,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/series-2.png" alt="Halo movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -863,6 +883,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/series-3.png" alt="Vikings: Valhalla movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -897,6 +918,7 @@
                   <figure class="card-banner">
                     <img src="./assets/images/series-4.png" alt="Money Heist movie poster" />
                   </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
                 </a>
 
                 <div class="title-wrapper">
@@ -1051,36 +1073,26 @@
           class="footer-bottom-img" />
       </div>
     </div>
+    
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
 
 
 
-  <!-- 
-    - #GO TO TOP
-  -->
+<!-- GO TO TOP -->
+<a href="#top" class="go-top" data-go-top>
+  <ion-icon name="chevron-up"></ion-icon>
+</a>
 
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up"></ion-icon>
-  </a>
-<!-- customUI -->
-<script
-    src="https://code.jquery.com/jquery-3.1.1.min.js"
-    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-    crossorigin="anonymous"></script>
-  <script src="semantic/dist/semantic.min.js"></script>
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+<!-- custom js link-->
+<script src="./assets/js/script.js"></script>
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  
+<!--icon with ionicon link-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<!-- framework UI -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/js/foundation.min.js" integrity="sha512-HugKDgJVjWdi/RfSbpjwOPqBhO2AQ6TuETbq7eGGutNulCWxZuERGwK9RutFQ/rbogsqpmfOtqJpFy2Y4AeJcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 
 </html>
