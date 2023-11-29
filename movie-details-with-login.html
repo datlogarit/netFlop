@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Netflop Details</title>
+  <title>Netflop Details with login</title>
 
 <!-- icon -->
 <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
@@ -76,9 +76,24 @@
           <option value="tu">TU</option>
         </select>
       </div> -->
-      <a href="login.html">
+      <!-- <a href="login.html">
         <button class="btn btn-primary">Sign in</button>
-      </a>
+      </a> -->
+      <div class="dropdown">
+        <button onclick="F_Dropdown()" class="dropbtn">
+          <div class="avt-user">
+            <i class="fa-solid fa-user"></i>
+            <span>Đạt</span>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </button>
+        
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Logout</a>
+          <a href="#">History</a>
+
+        </div>
+      </div>
 
     </div>
 
@@ -108,7 +123,7 @@
       <ul class="navbar-list">
 
         <li>
-          <a href="./index.html" class="navbar-link">Home</a>
+          <a href="./index-with-login.html" class="navbar-link">Home</a>
         </li>
 
         <li>
