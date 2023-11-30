@@ -1,29 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
+<!-- Coding By CodingNepal - youtube.com/codingnepal -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Draggable Image Slider | CodingNepal</title>
+    <link rel="stylesheet" href="/assets/css/test.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./css/test.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
-  <div class="dropdown">
-    <button onclick="F_Dropdown()" class="dropbtn">
-      <div>
-        <i class="fa-solid fa-user"></i>
-        <span>Đạt</span>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="./js/test.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="./images/movie-1.png" alt="img" draggable="false">
+        <img src="./images/movie-2.png" alt="img" draggable="false">
+        <img src="./images/movie-3.png" alt="img" draggable="false">
+        <img src="./images/movie-4.png" alt="img" draggable="false">
+        <img src="./images/movie-5.png" alt="img" draggable="false">
+        <img src="./images/movie-6.png" alt="img" draggable="false">
+        <img src="./images/movie-7.png" alt="img" draggable="false">
+        <img src="./images/movie-8.png" alt="img" draggable="false">
+        <img src="./images/movie-9.png" alt="img" draggable="false">
       </div>
-        
-       
-    </button>
-    
-    <div id="myDropdown" class="dropdown-content">
-      <a href="#">Log Out</a>
-      <a href="#">History</a>
-
+      <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
-  </div>
-      <script src="./js/test.js"></script>
-</body>
+    
+  </body>
 </html>
