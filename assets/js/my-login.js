@@ -2,10 +2,6 @@
  * My Login
  *
  * Bootstrap 4 Login Page
- *
- * 
- * Help me to keep this project alive
- * https://www.buymeacoffee.com/mhdnauvalazhar
  * 
  ******************************************/
 

@@ -23,7 +23,6 @@
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body id="top">
   <!-- 
     - #HEADER
@@ -81,7 +80,7 @@
             </select>
           </div> -->
 
-        <a href="login.html"><button class="btn btn-primary">Sign in</button></a>
+        <a href="login.html"><button class="btn btn-primary">Login</button></a>
       </div>
 
       <button class="menu-open-btn" data-menu-open-btn>
@@ -121,7 +120,7 @@
           </li>
 
           <li>
-            <a href="#" class="navbar-link">Pricing</a>
+            <a href="#" class="navbar-link">About Us</a>
           </li>
         </ul>
 
@@ -400,7 +399,7 @@
         - #SERVICE
       -->
 
-      <section class="service">
+      <!-- <section class="service">
         <div class="container">
           <div class="service-banner">
             <figure>
@@ -465,7 +464,7 @@
             </ul>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- 
         - #TOP RATED
@@ -952,18 +951,18 @@
       <section class="cta">
         <div class="container">
           <div class="title-wrapper">
-            <h2 class="cta-title">Trial start first 30 days.</h2>
+            <h2 class="cta-title">Receive free notifications</h2>
 
             <p class="cta-text">
               Enter your email to create or restart your membership.
             </p>
           </div>
 
-          <form action="" class="cta-form">
+          <form action="" class="cta-form" onsubmit="receive()">
             <input type="email" name="email" required placeholder="Enter your email" class="email-field" />
 
-            <button type="submit" class="cta-form-btn">Get started</button>
-          </form>
+            <button type="submit" class="cta-form-btn"  >Get started</button>
+          </form >
         </div>
       </section>
     </article>
@@ -1003,7 +1002,7 @@
             </li>
 
             <li>
-              <a href="#" class="footer-link">Pricing</a>
+              <a href="#" class="footer-link">About Us</a>
             </li>
           </ul>
         </div>
@@ -1076,7 +1075,8 @@
   <a href="#top" class="go-top" data-go-top>
     <ion-icon name="chevron-up"></ion-icon>
   </a>
-
+<!-- library of pupup -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <!-- custom js link-->
   <script src="./assets/js/script.js"></script>

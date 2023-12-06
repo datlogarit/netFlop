@@ -7,21 +7,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Netflop Details with login</title>
 
-<!-- icon -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- icon -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
-<!-- favicon -->
-<link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-<!-- custom css link-->
-<link rel="stylesheet" href="./assets/css/style.css" />
-<!--google font link-->
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-  integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- custom css link-->
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!--google font link-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
@@ -29,41 +29,44 @@
     - #HEADER
   -->
 
-<header class="header" data-header>
-  <div class="container">
+<body id="top">
 
-    <div class="overlay" data-overlay></div>
 
-    <!-- <a href="./index.html" class="logo">
-        <img src="./assets/images/logo.svg" alt="Filmlane logo">
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <!-- <a href="./index.html" class="logo">
+        <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
       </a> -->
-    <!-- <button class="btn btn-primary">
+      <!-- <button class="btn btn-primary">
         <ion-icon name="videocam-outline"></ion-icon> NetFlop
        </button> -->
-    <h1 class="logo-index">Netflop</h1>
+      <h1 class="logo-index">Netflop</h1>
 
 
-    <div class="header-actions">
+      <div class="header-actions">
 
-      <!-- search-button -->
-      <div id="searchbar" class="collapsed">
-        <div id="search-box">
-          <div id="sliding-panel-outer">
-            <div id="sliding-panel-inner">
-              <input type="text" id="search-input" placeholder="Text here to search" />
-              <button id="search-submit">Search</button>
-            </div><!--#sliding-panel-inner-->
-          </div><!--#sliding-panel-outer-->
+        <!-- search-button -->
+        <div id="searchbar" class="collapsed">
+          <div id="search-box">
+            <div id="sliding-panel-outer">
+              <div id="sliding-panel-inner">
+                <input type="text" id="search-input" placeholder="Text here to search" />
+                <button id="search-submit">Search</button>
+              </div><!--#sliding-panel-inner-->
+            </div><!--#sliding-panel-outer-->
 
-          <div class="search-label">
-            <i class="fa fa-search"></i>
-            <i class="fa fa-times"></i>
-          </div>
-        </div><!--#search-box-->
-      </div><!--#searchbar-->
+            <div class="search-label">
+              <i class="fa fa-search"></i>
+              <i class="fa fa-times"></i>
+            </div>
+          </div><!--#search-box-->
+        </div><!--#searchbar-->
 
 
-      <!-- <div class="lang-wrapper">
+        <!-- <div class="lang-wrapper">
         <label for="language">
           <ion-icon name="globe-outline"></ion-icon>
         </label>
@@ -75,557 +78,697 @@
           <option value="tu">TU</option>
         </select>
       </div> -->
-      <!-- <a href="login.html">
+        <!-- <a href="login.html">
         <button class="btn btn-primary">Sign in</button>
       </a> -->
-      <div class="dropdown">
-        <button onclick="F_Dropdown()" class="dropbtn">
-          <div class="avt-user">
-            <i class="fa-regular fa-circle-user"></i>
-            <span>Đạt</span>
-            <i class="fa-solid fa-caret-down"></i>
-          </div>
-        </button>
-        
-        <div id="myDropdown" class="dropdown-content">
-          <a href="#">Logout</a>
-          <a href="#">History</a>
-
-        </div>
-      </div>
-
-    </div>
-
-    <button class="menu-open-btn" data-menu-open-btn>
-      <ion-icon name="reorder-two"></ion-icon>
-    </button>
-
-    <nav class="navbar" data-navbar>
-
-      <div class="navbar-top">
-
-        <!-- <a href="./index.html" class="logo">
-            <img src="./assets/images/logo.svg" alt="Filmlane logo">
-          </a> -->
-        <!-- <button class="btn btn-primary">
-            <ion-icon name="videocam-outline"></ion-icon> NetFlop
-           </button> -->
-        <h1 class="logo-index">Netflop</h1>
-
-
-        <button class="menu-close-btn" data-menu-close-btn>
-          <ion-icon name="close-outline"></ion-icon>
-        </button>
-
-      </div>
-
-      <ul class="navbar-list">
-
-        <li>
-          <a href="./index-with-login.html" class="navbar-link">Home</a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-link">Movie</a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-link">Tv Show</a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-link">Web Series</a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-link">Pricing</a>
-        </li>
-
-      </ul>
-
-      <ul class="navbar-social-list">
-
-        <li>
-          <a href="#" class="navbar-social-link">
-            <ion-icon name="logo-twitter"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-social-link">
-            <ion-icon name="logo-facebook"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-social-link">
-            <ion-icon name="logo-pinterest"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-social-link">
-            <ion-icon name="logo-instagram"></ion-icon>
-          </a>
-        </li>
-
-        <li>
-          <a href="#" class="navbar-social-link">
-            <ion-icon name="logo-youtube"></ion-icon>
-          </a>
-        </li>
-
-      </ul>
-
-    </nav>
-
-  </div>
-</header>
-
-
-
-
-
-<main>
-  <article>
-
-    <!-- 
-        - #MOVIE DETAIL
-      -->
-
-    <section class="movie-detail">
-      <div class="container">
-
-        <figure class="movie-detail-banner">
-
-          <img src="./assets/images/movie-4.png" alt="Free guy movie poster">
-
-          <button class="play-btn">
-            <ion-icon name="play-circle-outline"></ion-icon>
+        <div class="dropdown">
+          <button onclick="F_Dropdown()" class="dropbtn">
+            <div class="avt-user">
+              <i class="fa-regular fa-circle-user"></i>
+              <span>Đạt</span>
+              <i class="fa-solid fa-caret-down"></i>
+            </div>
           </button>
 
-        </figure>
-
-        <div class="movie-detail-content">
-
-          <p class="detail-subtitle">New Episodes</p>
-
-          <h1 class="h1 detail-title">
-            Name's <strong>Film</strong>
-          </h1>
-
-          <div class="meta-wrapper">
-
-            <div class="badge-wrapper">
-              <div class="badge badge-fill">PG 13</div>
-
-              <div class="badge badge-outline">HD</div>
-            </div>
-
-            <div class="ganre-wrapper">
-              <a href="#">Comedy,</a>
-
-              <a href="#">Action,</a>
-
-              <a href="#">Adventure,</a>
-
-              <a href="#">Science Fiction</a>
-            </div>
-
-            <div class="date-time">
-
-              <div>
-                <ion-icon name="calendar-outline"></ion-icon>
-
-                <time datetime="2021">6-7-2002</time>
-              </div>
-
-              <div>
-                <ion-icon name="time-outline"></ion-icon>
-
-                <time datetime="PT115M">115 min</time>
-              </div>
-
-            </div>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#">Logout</a>
+            <a href="#">History</a>
 
           </div>
-
-          <p class="storyline">
-            A bank teller called Guy realizes he is a background character in an open world video game called Free
-            City that will
-            soon go offline.
-          </p>
-
-          <div class="rate-in-film">
-            <div class="point">
-              <h2>9.5</h2>
-            </div>
-            <div class="rating">
-              <div class="stars">
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-                <i class="fa-regular fa-solid fa-star"></i>
-              </div>
-              <div class="number-of-rate">
-                <i class="fa-regular fa-circle-user"></i>
-                <p>2023 (the number of rating) reviews</p>
-              </div>
-            </div>
-            <!-- <div class="your-vote">
-              Your review
-            </div> -->
-          </div>
-
-          <div class="details-actions">
-
-            <button class="share">
-              <ion-icon name="share-social"></ion-icon>
-
-              <span>Share</span>
-            </button>
-
-            <div class="title-wrapper">
-              <p class="title">Prime Video</p>
-
-              <p class="text">Streaming Channels</p>
-            </div>
-
-            <button class="btn btn-primary">
-              <ion-icon name="play"></ion-icon>
-
-              <span>Watch Now</span>
-            </button>
-
-          </div>
-
-          <!-- <a href="./assets/images/movie-4.png" download class="download-btn">
-            <span>Download</span>
-
-            <ion-icon name="download-outline"></ion-icon>
-          </a> -->
-
         </div>
 
       </div>
-    </section>
 
+      <button class="menu-open-btn" data-menu-open-btn>
+        <ion-icon name="reorder-two"></ion-icon>
+      </button>
 
+      <nav class="navbar" data-navbar>
 
+        <div class="navbar-top">
 
-
-    <!-- 
-        - #TV SERIES
-      -->
-
-    <section class="tv-series">
-      <div class="container">
-
-        <p class="section-subtitle">Best TV Series</p>
-
-        <h2 class="h2 section-title">World Best TV Series</h2>
-
-        <ul class="movies-list">
-
-          <li>
-            <div class="movie-card">
-
-              <a href="./movie-details.html">
-                <figure class="card-banner">
-                  <img src="./assets/images/series-1.png" alt="Moon Knight movie poster">
-                </figure>
-                <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
-              </a>
-
-              <div class="title-wrapper">
-                <a href="./movie-details.html">
-                  <h3 class="card-title">Moon Knight</h3>
-                </a>
-
-                <time datetime="2022">2022</time>
-              </div>
-
-              <div class="card-meta">
-                <div class="badge badge-outline">2K</div>
-
-                <div class="duration">
-                  <ion-icon name="time-outline"></ion-icon>
-
-                  <time datetime="PT47M">47 min</time>
-                </div>
-
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-
-                  <data>8.6</data>
-                </div>
-              </div>
-
-            </div>
-          </li>
-
-          <li>
-            <div class="movie-card">
-
-              <a href="./movie-details.html">
-                <figure class="card-banner">
-                  <img src="./assets/images/series-2.png" alt="Halo movie poster">
-                </figure>
-                <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
-              </a>
-
-              <div class="title-wrapper">
-                <a href="./movie-details.html">
-                  <h3 class="card-title">Halo</h3>
-                </a>
-
-                <time datetime="2022">2022</time>
-              </div>
-
-              <div class="card-meta">
-                <div class="badge badge-outline">2K</div>
-
-                <div class="duration">
-                  <ion-icon name="time-outline"></ion-icon>
-
-                  <time datetime="PT59M">59 min</time>
-                </div>
-
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-
-                  <data>8.8</data>
-                </div>
-              </div>
-
-            </div>
-          </li>
-
-          <li>
-            <div class="movie-card">
-
-              <a href="./movie-details.html">
-                <figure class="card-banner">
-                  <img src="./assets/images/series-3.png" alt="Vikings: Valhalla movie poster">
-                </figure>
-                <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
-              </a>
-
-              <div class="title-wrapper">
-                <a href="./movie-details.html">
-                  <h3 class="card-title">Vikings: Valhalla</h3>
-                </a>
-
-                <time datetime="2022">2022</time>
-              </div>
-
-              <div class="card-meta">
-                <div class="badge badge-outline">2K</div>
-
-                <div class="duration">
-                  <ion-icon name="time-outline"></ion-icon>
-
-                  <time datetime="PT51M">51 min</time>
-                </div>
-
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-
-                  <data>8.3</data>
-                </div>
-              </div>
-
-            </div>
-          </li>
-
-          <li>
-            <div class="movie-card">
-
-              <a href="./movie-details.html">
-                <figure class="card-banner">
-                  <img src="./assets/images/series-4.png" alt="Money Heist movie poster">
-                </figure>
-                <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
-              </a>
-
-              <div class="title-wrapper">
-                <a href="./movie-details.html">
-                  <h3 class="card-title">Money Heist</h3>
-                </a>
-
-                <time datetime="2017">2017</time>
-              </div>
-
-              <div class="card-meta">
-                <div class="badge badge-outline">4K</div>
-
-                <div class="duration">
-                  <ion-icon name="time-outline"></ion-icon>
-
-                  <time datetime="PT70M">70 min</time>
-                </div>
-
-                <div class="rating">
-                  <ion-icon name="star"></ion-icon>
-
-                  <data>8.3</data>
-                </div>
-              </div>
-
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section>
-
-  </article>
-</main>
-
-
-
-
-
-<!-- 
-    - #FOOTER
-  -->
-
-<footer class="footer">
-
-  <div class="footer-top">
-    <div class="container">
-
-      <div class="footer-brand-wrapper">
-
-        <!-- <a href="./index.html" class="logo">
-            <img src="./assets/images/logo.svg" alt="Filmlane logo">
+          <!-- <a href="./index.html" class="logo">
+            <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
           </a> -->
-        <!-- <button class="btn btn-primary">
+          <!-- <button class="btn btn-primary">
             <ion-icon name="videocam-outline"></ion-icon> NetFlop
            </button> -->
-        <h1 class="logo-index">Netflop</h1>
+          <h2 class="logo-index">Netflop</h2>
 
 
-        <ul class="footer-list">
+          <button class="menu-close-btn" data-menu-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
 
           <li>
-            <a href="./index.html" class="footer-link">Home</a>
+            <a href="./index-with-login.html" class="navbar-link">Home</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Movie</a>
+            <a href="#" class="navbar-link">Movie</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">TV Show</a>
+            <a href="#" class="navbar-link">Tv Show</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Web Series</a>
+            <a href="#" class="navbar-link">Web Series</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Pricing</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="quicklink-wrapper">
-
-        <ul class="quicklink-list">
-
-          <li>
-            <a href="#" class="quicklink-link">Faq</a>
-          </li>
-
-          <li>
-            <a href="#" class="quicklink-link">Help center</a>
-          </li>
-
-          <li>
-            <a href="#" class="quicklink-link">Terms of use</a>
-          </li>
-
-          <li>
-            <a href="#" class="quicklink-link">Privacy</a>
+            <a href="#" class="navbar-link">About Us</a>
           </li>
 
         </ul>
 
-        <ul class="social-list">
+        <ul class="navbar-social-list">
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
+            <a href="#" class="navbar-social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
               <ion-icon name="logo-pinterest"></ion-icon>
             </a>
           </li>
 
           <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="navbar-social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
             </a>
           </li>
 
         </ul>
 
+      </nav>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #MOVIE DETAIL
+      -->
+
+      <section class="movie-detail">
+        <div class="container">
+
+          <figure class="movie-detail-banner">
+
+            <img src="./assets/images/movie-4.png" alt="Free guy movie poster">
+
+            <!-- <button class="play-btn">
+              <ion-icon name="play-circle-outline"></ion-icon>
+            </button> -->
+
+          </figure>
+
+          <div class="movie-detail-content">
+
+            <p class="detail-subtitle">New Episodes</p>
+
+            <h1 class="h1 detail-title">
+              Name's <strong>Film</strong>
+            </h1>
+
+            <div class="meta-wrapper">
+
+              <div class="badge-wrapper">
+                <div class="badge badge-fill">PG 13</div>
+
+                <div class="badge badge-outline">HD</div>
+              </div>
+
+              <div class="ganre-wrapper">
+                <a href="#">Comedy,</a>
+
+                <a href="#">Action,</a>
+
+                <a href="#">Adventure,</a>
+
+                <a href="#">Science Fiction</a>
+              </div>
+
+              <div class="date-time">
+
+                <div>
+                  <ion-icon name="calendar-outline"></ion-icon>
+
+                  <time datetime="2021">6-7-2002</time>
+                </div>
+
+                <div>
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT115M">115 min</time>
+                </div>
+
+              </div>
+
+            </div>
+
+            <p class="storyline">
+              A bank teller called Guy realizes he is a background character in an open world video game called Free
+              City that will
+              soon go offline.
+            </p>
+
+            <div class="rate-in-film">
+              <div class="point">
+                <h2>9.5</h2>
+              </div>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                  <i class="fa-regular fa-solid fa-star"></i>
+                </div>
+                <div class="number-of-rate">
+                  <i class="fa-regular fa-circle-user"></i>
+                  <p>2023 (the number of rating) reviews</p>
+                </div>
+              </div>
+              <!-- <div class="your-vote">
+              Your review
+            </div> -->
+            </div>
+
+            <div class="details-actions">
+
+              <button class="share">
+                <ion-icon name="share-social"></ion-icon>
+
+                <span>Share</span>
+              </button>
+
+              <div class="title-wrapper">
+                <p class="title">Prime Video</p>
+
+                <p class="text">Streaming Channels</p>
+              </div>
+
+              <button class="btn btn-primary">
+                <ion-icon name="play"></ion-icon>
+
+                <span>Watch Now</span>
+              </button>
+
+            </div>
+
+            <!-- <a href="./assets/images/movie-4.png" download class="download-btn">
+            <span>Download</span>
+
+            <ion-icon name="download-outline"></ion-icon>
+          </a> -->
+
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="media-film">
+          <p>Media of film</p>
+          <div class="wrapper-media">
+            <i id="left" class="fa-solid fa-angle-left"></i>
+            <div class="carousel">
+              <img src="./assets/images/movie-1.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-2.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-3.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-4.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-5.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-6.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-7.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-8.png" alt="img" draggable="false">
+              <img src="./assets/images/movie-1.png" alt="img" draggable="false">
+            </div>
+            <i id="right" class="fa-solid fa-angle-right"></i>
+          </div>
+        </div>
+      </section>
+
+      <div class="review-of-user">
+        <div class="review-of-user-control">
+          <div class="review-of-user-title">
+            <div class="review-of-user-title-more">
+              <h1>
+                User reviews
+              </h1>
+              <div class="wrapper-more-less">
+                <button id="myBtn-more-less" onclick="showMore()">
+                  <i class="more fa-solid fa-angles-right"></i>
+                  <i class="less fa-solid fa-angles-left"></i>
+                </button>
+              </div>
+            </div>
+            <button class="add-review" onclick="openForm()">
+              <p>
+                + review
+              </p>
+            </button>
+            <div class="form-popup" id="myForm">
+              <form action="" class="form-container">
+                <textarea name="" id="" cols="40" rows="7" placeholder="Text your comment "></textarea>
+                <div class="control-btn-popUp-cmt">
+                  <button type="submit" class="btn-form">Send</button>
+                  <button type="button" class="btn-form cancel" onclick="closeForm()">Close</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="cmt-of-users-box">
+            <div class="your-cmt">
+              <div class="cmt-of-user-box">
+                <div class="inf-user">
+                  <i class="fa-solid fa-user-check"></i>
+                  <h4>Your comment</h4>
+                </div>
+                <p>
+                  it is the great film.Amazing, good job
+                </p>
+              </div>
+
+
+              <div class="dropdown-more-edit">
+                <button onclick="F_Dropdown_more_edit()" class="dropbtn-more-edit">
+                    <i class="fa-solid fa-circle-info more"></i>
+                </button>
+      
+                <div id="myDropdown-more-edit" class="dropdown-content-more-edit">
+                  <a href="#">Delete comment</a>
+                  <a href="#">Edit comment</a>
+                </div>
+              </div>
+
+              <!-- <i class="fa-solid fa-ellipsis-vertical"></i> -->
+            </div>
+
+            <div class="cmt-of-user-box">
+              <div class="inf-user">
+                <i class="fa-solid fa-user-check"></i>
+                <h4>doandat</h4>
+              </div>
+              <p>
+                it is the great film.Amazing, good job
+              </p>
+            </div>
+            <div class="cmt-of-user-box">
+              <div class="inf-user">
+                <i class="fa-solid fa-user-check"></i>
+                <h4>doandat</h4>
+              </div>
+              <p>
+                it is the great film.Amazing, good job
+              </p>
+            </div>
+            <div class="cmt-of-user-box">
+              <div class="inf-user">
+                <i class="fa-solid fa-user-check"></i>
+                <h4>doandat</h4>
+              </div>
+              <p>
+                it is the great film.Amazing, good job
+              </p>
+            </div>
+            <div class="cmt-of-user-box more-cmt">
+              <div class="inf-user">
+                <i class="fa-solid fa-user-check"></i>
+                <h4>doandat</h4>
+              </div>
+              <p>
+                it is the great film.Amazing, good job
+              </p>
+            </div>
+            <div class="cmt-of-user-box more-cmt">
+              <div class="inf-user">
+                <i class="fa-solid fa-user-check"></i>
+                <h4>viethung</h4>
+              </div>
+              <p>
+                i were here </p>
+            </div>
+            <div class="cmt-of-user-box more-cmt">
+              <div class="inf-user">
+                <i class="fa-solid fa-user-check"></i>
+                <h4>thanhdat</h4>
+              </div>
+              <p>
+                dac cau thai nguyen </p>
+            </div>
+            <div class="cmt-of-user-box more-cmt">
+              <div class="inf-user">
+                <i class="fa-solid fa-user-check"></i>
+                <h4>viethung</h4>
+              </div>
+              <p>
+                it is the great film.Amazing, good job
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
+
+
+      <!-- 
+        - #TV SERIES
+      -->
+
+      <section class="tv-series">
+        <div class="container">
+
+          <p class="section-subtitle">Best TV Series</p>
+
+          <h2 class="h2 section-title">World Best TV Series</h2>
+
+          <ul class="movies-list">
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-1.png" alt="Moon Knight movie poster">
+                  </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Moon Knight</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT47M">47 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.6</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-2.png" alt="Halo movie poster">
+                  </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Halo</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT59M">59 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.8</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-3.png" alt="Vikings: Valhalla movie poster">
+                  </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Vikings: Valhalla</h3>
+                  </a>
+
+                  <time datetime="2022">2022</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">2K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT51M">51 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="movie-card">
+
+                <a href="./movie-details.html">
+                  <figure class="card-banner">
+                    <img src="./assets/images/series-4.png" alt="Money Heist movie poster">
+                  </figure>
+                  <span class="animation-blur"><i class="fa-solid fa-play"></i></span>
+                </a>
+
+                <div class="title-wrapper">
+                  <a href="./movie-details.html">
+                    <h3 class="card-title">Money Heist</h3>
+                  </a>
+
+                  <time datetime="2017">2017</time>
+                </div>
+
+                <div class="card-meta">
+                  <div class="badge badge-outline">4K</div>
+
+                  <div class="duration">
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT70M">70 min</time>
+                  </div>
+
+                  <div class="rating">
+                    <ion-icon name="star"></ion-icon>
+
+                    <data>8.3</data>
+                  </div>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <!-- <a href="./index.html" class="logo">
+            <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
+          </a> -->
+          <!-- <button class="btn btn-primary">
+            <ion-icon name="videocam-outline"></ion-icon> NetFlop
+           </button> -->
+          <h1 class="logo-index">Netflop</h1>
+
+
+          <ul class="footer-list">
+
+            <li>
+              <a href="./index.html" class="footer-link">Home</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Movie</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">TV Show</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Web Series</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">About Us</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="quicklink-wrapper">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-link">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-link">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="container">
+    <div class="footer-bottom">
+      <div class="container">
 
-      <p class="copyright">
-        &copy; 2023 <a href="#">Copyright belongs to group 58</a>
-      </p>
+        <p class="copyright">
+          &copy; 2023 <a href="#">Copyright belongs to group 58</a>
+        </p>
 
-      <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
+        <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo" class="footer-bottom-img">
 
+      </div>
     </div>
-  </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  </footer>
 
 
 
 
 
-<!-- GO TO TOP -->
-<a href="#top" class="go-top" data-go-top>
-  <ion-icon name="chevron-up"></ion-icon>
-</a>
+  <!-- GO TO TOP -->
+  <a href="#top" class="go-top" data-go-top>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+  <!-- library of pupup -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+  <!-- custom js link-->
+  <script src="./assets/js/script.js"></script>
 
-<!-- custom js link-->
-<script src="./assets/js/script.js"></script>
-
-<!--icon with ionicon link-->
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <!--icon with ionicon link-->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
 </body>
 

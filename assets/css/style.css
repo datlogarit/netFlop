@@ -28,7 +28,7 @@
   --gunmetal-1: hsl(229, 15%, 21%);
   --gunmetal-2: hsl(216, 22%, 18%);
   --gainsboro: hsl(0, 7%, 88%);
-  --citrine: hsl(57, 97%, 45%);
+  --citrine: rgb(227, 216, 3);
   --xiketic: hsl(253, 21%, 13%);
   --gray-x: hsl(0, 0%, 74%);
   --white: hsl(0, 100%, 100%);
@@ -73,12 +73,16 @@
 }
 
 
-
+/* body{
+  padding-left: 100px;
+  padding-right: 100px;
+} */
 
 
 /*-----------------------------------*\
  * #RESET
 \*-----------------------------------*/
+
 
 *, *::before, *::after {
   margin: 0;
@@ -156,6 +160,12 @@ body.active { overflow: hidden; }
   margin-bottom: 10px;
   text-align: center;
 }
+
+
+/* custum logo */
+/* .logo img{
+  width: 80%;
+} */
 
 .section-title { text-align: center; }
 
@@ -272,6 +282,7 @@ body.active { overflow: hidden; }
 }
 
 .movie-card .card-banner {
+  /* height: 60px; */
   position: relative;
   background: var(--gunmetal-1);
   aspect-ratio: 2 / 3;
@@ -1087,7 +1098,8 @@ body.active { overflow: hidden; }
  
 }
 #searchbar #search-input{
-  width: 480px;
+  width: 580px;
+  /* width: 60%; */
   height: 35px;
   border-radius: 2px;
   padding: 0 0 0 10px;
@@ -1099,7 +1111,8 @@ body.active { overflow: hidden; }
   position: absolute;
   top: 0;
   right: 30px;
-  width: 480px;
+  width: 580px;
+  /* width: 60%; */
   transition: width 0.5s ease;
 }
 
@@ -1269,7 +1282,7 @@ body.active { overflow: hidden; }
    * HEADER
    */
 
-  .header .container { gap: 30px; }/*xác định khoảng trống giữa các phần tử con*/
+  .header .container { gap: 20px; }/*xác định khoảng trống giữa các phần tử con*/
 
   .header-actions {
     display: flex;
@@ -1406,7 +1419,10 @@ body.active { overflow: hidden; }
    * REUSED STYLE
    */
 
-  .container { max-width: 960px; }
+  .container {
+     max-width: 960px;
+     padding-inline: 100px;
+   }
 
   /* MOVIE CARD */
 
@@ -1537,7 +1553,7 @@ body.active { overflow: hidden; }
    * MOVIE DETAIL
    */
 
-  .movie-detail { padding-bottom: 200px; }
+  .movie-detail { padding-bottom: 100px; }
 
   .movie-detail .container {
     position: relative;
@@ -1736,7 +1752,10 @@ body.active { overflow: hidden; }
    * CTA
    */
 
-  .cta .container { max-width: 1150px; }
+  .cta .container {
+     max-width: 1150px;
+     margin: auto 20px;
+   }
 
 
 
@@ -1829,6 +1848,15 @@ body.active { overflow: hidden; }
   position: relative;
   /* border-radius: 20px; */
 }
+
+.dropbtn-more-edit{
+  /* background-color: rgba(255, 0, 0, 0.3); */
+  color:black;
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+  padding: 10px 10px;
+}
 .fa-caret-down{
   /* color: #d74b4b; */
   font-size: 13px;
@@ -1841,8 +1869,14 @@ body.active { overflow: hidden; }
   position: relative;
   display: inline-block;
 }
-
-.dropdown-content {
+.dropdown-more-edit{
+  position: relative;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  padding: 10px 10px;
+}
+.dropdown-content{
   display: none;
   position: absolute;
   margin-top: 5px;
@@ -1854,7 +1888,27 @@ body.active { overflow: hidden; }
   /* z-index: 1; */
   border-radius: 3px;
 }
-
+.dropdown-content-more-edit{
+  display: none;
+  position: absolute;
+  right: -190px;
+  top: 20px;
+  margin-top: 5px;
+  /* top: 10px; */
+  background-color: #f1f1f1;
+  min-width: 200px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  /* z-index: 1; */
+  border-radius: 3px;
+}
+.dropdown-content-more-edit a{
+  padding: 20px 30px;
+  color: black;
+}
+.dropdown-content-more-edit a:hover{
+  background-color: #ddd;
+}
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
@@ -1922,4 +1976,297 @@ body.active { overflow: hidden; }
 .media-img img{
   width: 20%;
   margin: 0px 10px;
+}
+
+/* slide media */
+/* Import Google font - Poppins */
+/* body{
+  display: flex;
+  padding: 0 35px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #343F4F;
+} */
+.media-film{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.media-film p{
+  color: #fff ;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.wrapper-media{
+  display: flex;
+  max-width: 1000px;
+  flex-direction: row;
+  position: relative;
+}
+.wrapper-media i{
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper-media i:active{
+  transform: translateY(-50%) scale(0.9);
+}
+.wrapper-media i:hover{
+  background: #f2f2f2;
+}
+.wrapper-media i:first-child{
+  left: -22px;
+  display: none;
+}
+.wrapper-media i:last-child{
+  right: -22px;
+}
+.wrapper-media .carousel{
+  display: flex;
+  /* position: relative; */
+  font-size: 0px;
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.carousel.dragging{
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.carousel.dragging img{
+  pointer-events: none;
+}
+.carousel img{
+  /* position: absolute; */
+    height: 360px;
+  object-fit: cover;
+  user-select: none;
+  margin-left: 14px;
+  width: calc(100% / 3);
+  border-radius: 4px;
+}
+.carousel:hover img:hover{
+  top: -10px;
+  transition: all 3s ease-out;
+}
+.carousel img:first-child{
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel img{
+    width: calc(100% / 2);
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .carousel img{
+    width: 100%;
+  }
+  .rate-in-film{
+    display: none;
+  }
+}
+
+
+/* bunus custom */
+.main{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+/* cmt of user */
+
+
+.review-of-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #dcddd8;
+}
+.review-of-user .review-of-user-control{
+  width: 700px;
+}
+.review-of-user-title{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  /* max-width: 700px; */
+}
+.review-of-user-title .review-of-user-title-more{
+  display: flex;
+  flex-direction: row;
+}
+.review-of-user-title-more i{
+  margin: 5px 0px 0px 15px;
+  font-size: 30px;
+  color: #fff;
+}
+.review-of-user-title-more:hover i:hover{
+  color: var(--citrine);
+}
+.cmt-of-users-box{
+  background-color: #dcddd8;
+  color: #172b3c;
+  padding: 20px auto;
+  border-radius: 3px;
+}
+
+.cmt-of-user-box{
+  border-bottom: 1px rgba(185, 74, 74, 0.4) solid;
+  padding: 10px 25px;
+  /* margin: auto 10px; */
+}
+.your-cmt{
+  /* border-bottom: 1px rgba(185, 74, 74, 0.4) solid; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px rgba(185, 74, 74, 0.4) solid;
+
+}
+.fa-circle-info{
+  /* padding-right: 20px; */
+  font-size: 22px;
+  /* display: flex;
+  align-items: center;
+  color: #333; */
+}
+.your-cmt i:hover{
+  cursor: pointer;
+}
+.cmt-of-user-box:last-child{
+  border: none;
+}
+.cmt-of-user-box .inf-user{
+  display: flex;
+  flex-direction: row;
+}
+.inf-user:first-child{
+  margin-top: 10px;
+}
+.add-review p{
+  color: #fff;
+}
+.add-review:hover p:hover{
+  color: var(--citrine);
+}
+
+/* more cmt */
+.more-cmt{
+  display: none;
+  /* color: #d74b4b; */
+}
+
+.wrapper-more-less.active p {
+  white-space: normal;
+  overflow: visible;
+}
+
+
+.wrapper-more-less .less {
+  display: none;
+}
+
+.wrapper-more-less.active-more-less .less {
+  display: inline;
+}
+
+.wrapper-more-less.active-more-less .more {
+  display: none;
+}
+  
+  
+  .wrapper-more-less .less {
+    display: none;
+  }
+
+/* open form */
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  border-radius: 5px;
+  /* bottom: 50%; */
+  right: 27%;
+  top: 30%;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  width: 500px;
+  padding: 10px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+
+.form-container textarea{
+  padding: 10px 10px;
+}
+/* When the inputs get focus, do something */
+/* .form-container textarea:focus {
+  background-color: #ddd;
+  outline: none;
+  border: none;
+} */
+
+/* Set a style for the submit/login button */
+.form-container .btn-form {
+  background-color: #333;
+  color: var(--citrine);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 45%;
+  margin: auto 5%;
+  border-radius: 3px;
+  margin-bottom:10px;
+  /* opacity: 0.4; */
+}
+.control-btn-popUp-cmt{
+  display: flex;
+  flex-direction: row;
+}
+/* Add a red background color to the cancel button */
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover {
+  opacity: 1;
+}
+.form-container textarea{
+  border: 1px solid #ced4da;
+  font-size: 20px;
+  font-weight: 300;
+}
+.form-container textarea:focus{
+ 
+  outline: 0;
+  /* color: red; */
+  border:1px #86b7fe solid;
+  box-shadow: 0 0 0 0 1px rgba(13,110,253);
+  /* background-color: red; */
 }
