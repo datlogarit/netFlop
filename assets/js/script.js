@@ -104,9 +104,9 @@ function F_Dropdown() {
 window.onclick = function (event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
+    var x;
+    for (x = 0; x < dropdowns.length; x++) {
+      var openDropdown = dropdowns[x];
       if (openDropdown.classList.contains('show')) {
         openDropdown.classList.remove('show');
       }
@@ -117,16 +117,15 @@ window.onclick = function (event) {
 function F_Dropdown_more_edit() {
   document.getElementById("myDropdown-more-edit").classList.toggle("show");
 }
-
 // Close the dropdown if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn-more-edit')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content-more-edit");
+window.onclick = function (e) {
+  if (!e.target.matches('.dropbtn-more-edit')) {
+    var dropdowns_edit = document.getElementsByClassName("dropdown-content-more-edit");
     var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+    for (i = 0; i < dropdowns_edit.length; i++) {
+      var openDropdown_edit = dropdowns_edit[i];
+      if (openDropdown_edit.classList.contains('show')) {
+        openDropdown_edit.classList.remove('show');
       }
     }
   }
@@ -232,44 +231,27 @@ function userNeedLogin() {
   Swal.fire("You must login to rate");
 }
 // cmt with login
-function popUpAddCmt() {
+function confirm_delete_cmt(){
   Swal.fire({
-    title: "Text your comment",
-    input: "text",
-    inputAttributes: {
-      autocapitalize: "off"
-    },
+    title: "Are you sure?",
+    text: "You won't be able to revert this!",
+    icon: "warning",
     showCancelButton: true,
-    confirmButtonText: "Send",
-    showLoaderOnConfirm: true,
-    // preConfirm: async (login) => {
-    //   try {
-    //     const githubUrl = `
-    //       https://api.github.com/users/${login}
-    //     `;
-    //     const response = await fetch(githubUrl);
-    //     if (!response.ok) {
-    //       return Swal.showValidationMessage(`
-    //         ${JSON.stringify(await response.json())}
-    //       `);
-    //     }
-    //     return response.json();
-    //   } catch (error) {
-    //     Swal.showValidationMessage(`
-    //       Request failed: ${error}
-    //     `);
-    //   }
-    // },
-    allowOutsideClick: () => !Swal.isLoading()
-  // }).then((result) => {
-  //   if (result.isConfirmed) {
-  //     Swal.fire({
-  //       title: `${result.value.login}'s avatar`,
-  //       imageUrl: result.value.avatar_url
-  //     });
-  //   }
+    confirmButtonColor: "#3085d6",
+    cancelButtonColor: "#d33",
+    confirmButtonText: "Yes, delete it!"
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: "Deleted!",
+        text: "Your comment has been deleted.",
+        icon: "success"
+      });
+    }
   });
 }
+
+
 function openForm() {
   document.getElementById("myForm").style.display = "block";
 }
