@@ -42,24 +42,9 @@
     <header class="header" data-header>
       <div class="container">
         <div class="overlay" data-overlay></div>
-
-        <!-- <a href="./index.html" class="logo">
-        <ion-icon name="videocam-outline"></ion-icon> NetFlop
-        <img src="./assets/images/Netflop-logo3.png" alt="NetFlop logo">
-      </a> -->
-        <!-- <button class="btn btn-primary"> -->
-        <!-- <div class="logo-index">
-            <ion-icon name="videocam-outline"></ion-icon> NetFlop
-          </div> -->
-        <h1 class="logo-index">Netflop</h1>
-        <!-- </button> -->
+        <a href="index.html"><h1 class="logo-index">Netflop</h1></a>
 
         <div class="header-actions">
-          <!-- <button class="search-btn">
-            <ion-icon name="search-outline"></ion-icon>
-          </button> -->
-
-          <!-- search-button -->
           <div id="searchbar" class="collapsed">
             <div id="search-box">
               <div id="sliding-panel-outer">
@@ -82,20 +67,6 @@
             </div>
             <!--#search-box-->
           </div>
-          <!--#searchbar-->
-
-          <!-- <div class="lang-wrapper">
-            <label for="language">
-              <ion-icon name="globe-outline"></ion-icon>
-            </label>
-
-            <select name="language" id="language">
-              <option value="en">EN</option>
-              <option value="au">AU</option>
-              <option value="ar">AR</option>
-              <option value="tu">TU</option>
-            </select>
-          </div> -->
 
           <a href="login.html"
             ><button class="btn btn-primary">Login</button></a
@@ -108,13 +79,8 @@
 
         <nav class="navbar" data-navbar>
           <div class="navbar-top">
-            <!-- <a href="./index.html" class="logo">
-            <img src="./assets/images/logo.svg" alt="NetFlop logo">
-          </a> -->
-            <!-- <button class="btn btn-primary">
-              <ion-icon name="videocam-outline"></ion-icon> NetFlop
-            </button> -->
-            <h1 class="logo-index">Netflop</h1>
+            <a href="index.html"><h1 class="logo-index">Netflop</h1></a>
+            
 
             <button class="menu-close-btn" data-menu-close-btn>
               <ion-icon name="close-outline"></ion-icon>
@@ -122,9 +88,9 @@
           </div>
 
           <ul class="navbar-list">
-            <li>
+            <!-- <li>
               <a href="./index.html" class="navbar-link">Home</a>
-            </li>
+            </li> -->
 
             <li>
               <a href="#" class="navbar-link">Movie</a>
@@ -181,150 +147,769 @@
     <main>
       <h1 class="title">Top film</h1>
       <section>
-        <div class="suggest-content">xinchao</div>
+        <div class="suggest-content">
+          <div class="menu-option">
+            <i class="fa-solid fa-bars"></i>
+            <h6>Menu</h6>
+          </div>
+          <div class="option">
+            <a href="" class="option-film"><h5>Movie</h5></a>
+            <a href="" class="option-TVShow"><h5>TV Show</h5></a>
+            <a href="" class="option-sport"><h5>Sports</h5></a>
+          </div>
+        </div>
         <div class="wrapper-all-show">
           <div class="show-component">
-            <img src="./assets/images/movie-1.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-1.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-2.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-2.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-3.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-1.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-4.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-3.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-5.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-4.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-1.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-3.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-2.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/movie-1.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-3.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/movie-4.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-4.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/movie-7.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-2.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-1.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-3.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-1.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-1.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/movie-4.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-2.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-3.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-6.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-4.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-5.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-2.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-2.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/movie-8.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-3.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/movie-6.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-4.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-1.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-1.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-4.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
           <div class="show-component">
-            <img src="./assets/images/movie-2.png" alt="film component" />
-            <div class="show-component-inf">
-              <h2>name film</h2>
-              <h4>2022</h4>
+            <div class="movie-card">
+              <a href="./movie-details.html">
+                <figure class="card-banner">
+                  <img
+                    src="./assets/images/series-3.png"
+                    alt="Moon Knight movie poster"
+                  />
+                </figure>
+                <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
+              </a>
+
+              <div class="title-wrapper">
+                <a href="./movie-details.html">
+                  <h3 class="card-title">Moon Knight</h3>
+                </a>
+
+                <time datetime="2022">2022</time>
+              </div>
+
+              <div class="card-meta">
+                <div class="badge badge-outline">2K</div>
+
+                <div class="duration">
+                  <ion-icon name="time-outline"></ion-icon>
+
+                  <time datetime="PT47M">47 min</time>
+                </div>
+
+                <div class="rating">
+                  <ion-icon name="star"></ion-icon>
+
+                  <data>8.6</data>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <div class="next-page">
+        <div class="next-page-control">
+          <a href=""><i class="fa-solid fa-backward-step"></i></a>
+          <a href=""><div class="number-page">1</div></a>
+          <a href=""><div class="number-page">2</div></a>
+          <a href=""><div class="number-page">3</div></a>
+          <a href=""><i class="fa-solid fa-forward-step"></i></a>
+        </div>
+      </div>
     </main>
     <!-- 
     - #FOOTER
@@ -340,12 +925,13 @@
             <!-- <button class="btn btn-primary">
               <ion-icon name="videocam-outline"></ion-icon> NetFlop
             </button> -->
-            <h1 class="logo-index">Netflop</h1>
+            <a href="index.html"><h1 class="logo-index">Netflop</h1></a>
+            
 
             <ul class="footer-list">
-              <li>
+              <!-- <li>
                 <a href="./index.html" class="footer-link">Home</a>
-              </li>
+              </li> -->
 
               <li>
                 <a href="#" class="footer-link">Movie</a>
