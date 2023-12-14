@@ -228,8 +228,18 @@ carousel.addEventListener("touchend", dragStop);
 
 // cmt without login
 function userNeedLogin() {
-  Swal.fire("You must login to rate");
+  Swal.fire({
+    title: "You must login to rate",
+    // text: "You must login to rate",
+    icon: "error"
+  });
 }
+function click_follow(){
+  Swal.fire({
+    title: "You will receive the latest notification",
+    // text: "You must login to rate",
+    icon: "success"
+  });}
 // cmt with login
 function confirm_delete_cmt(){
   Swal.fire({

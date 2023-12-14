@@ -8,7 +8,8 @@
   <title>netflop - Vietnam's leading movie website</title>
 
 
-
+<!-- boostrap -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 <!-- icon -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
 
@@ -36,57 +37,56 @@
       <div class="overlay" data-overlay></div>
 
       <!-- <a href="./index.html" class="logo">
-        <ion-icon name="videocam-outline"></ion-icon> NetFlop
-        <img src="./assets/images/Netflop-logo3.png" alt="NetFlop logo">
-      </a> -->
-      <!-- <button class="btn btn-primary"> -->
-      <!-- <div class="logo-index">
-            <ion-icon name="videocam-outline"></ion-icon> NetFlop
-          </div> -->
-      <a href="index-with-login.html"><h1 class="logo-index">Netflop</h1></a>
-      <!-- </button> -->
+      <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
+    </a> -->
+      <!-- <button class="btn btn-primary">
+      <ion-icon name="videocam-outline"></ion-icon> NetFlop
+     </button> -->
+      <a href="index-with-login.html">
+        <h1 class="logo-index">Netflop</h1>
+      </a>
 
       <div class="header-actions">
-        <!-- <button class="search-btn">
-            <ion-icon name="search-outline"></ion-icon>
-          </button> -->
-
-
         <!-- search-button -->
         <div id="searchbar" class="collapsed">
           <div id="search-box">
             <div id="sliding-panel-outer">
               <div id="sliding-panel-inner">
-                <input type="text" id="search-input" placeholder="Text here to search" />
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Text here to search"
+                />
                 <button id="search-submit">Search</button>
-              </div><!--#sliding-panel-inner-->
-            </div><!--#sliding-panel-outer-->
+              </div>
+              <!--#sliding-panel-inner-->
+            </div>
+            <!--#sliding-panel-outer-->
 
             <div class="search-label">
               <i class="fa fa-search"></i>
               <i class="fa fa-times"></i>
             </div>
-          </div><!--#search-box-->
-        </div><!--#searchbar-->
-
+          </div>
+          <!--#search-box-->
+        </div>
+        <!--#searchbar-->
 
         <!-- <div class="lang-wrapper">
-          <label for="language">
-            <ion-icon name="globe-outline"></ion-icon>
-          </label>
+      <label for="language">
+        <ion-icon name="globe-outline"></ion-icon>
+      </label>
 
-          <select name="language" id="language">
-            <option value="en">EN</option>
-            <option value="au">AU</option>
-            <option value="ar">AR</option>
-            <option value="tu">TU</option>
-          </select>
-        </div> -->
-
-        <!-- <a href="login.html"
-            ><button class="btn btn-primary">Sign in</button></a
-          > -->
-
+      <select name="language" id="language">
+        <option value="en">EN</option>
+        <option value="au">AU</option>
+        <option value="ar">AR</option>
+        <option value="tu">TU</option>
+      </select>
+    </div> -->
+        <!-- <a href="login.html">
+      <button class="btn btn-primary">Sign in</button>
+    </a> -->
         <div class="dropdown">
           <button onclick="F_Dropdown()" class="dropbtn">
             <div class="avt-user">
@@ -95,53 +95,58 @@
               <i class="fa-solid fa-caret-down"></i>
             </div>
           </button>
-          
+
           <div id="myDropdown" class="dropdown-content">
             <a href="#">Logout</a>
             <a href="#">History</a>
-
           </div>
         </div>
+
+        <!-- noty -->
         <div class="header-actions-notify">
-          <i class="fa-solid fa-bell notify-icon"></i>
+          <i class="fa-solid fa-bell notify-icon position-relative"></i>
+          <span
+            class="position-absolute top-10 start-100 badge text-bg-secondary"
+            >5</span
+          >
           <div class="notify">
             <header class="header-noty">Thông báo mới nhận</header>
             <ul class="noty-list">
               <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-1.png" alt="film 1">
+                <img src="./assets/images/movie-1.png" alt="film 1" />
                 <div class="noty-details-content">
-                  <h4>Title noty</h4>
+                  <h6>Title noty</h6>
                   <p>Xin chao. fgoho</p>
                 </div>
               </li>
               <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-2.png" alt="film 1">
+                <img src="./assets/images/movie-2.png" alt="film 1" />
                 <div class="noty-details-content">
-                  <h4>Day la thong bao tu dong</h4>
+                  <h6>Day la thong bao tu dong</h6>
                   <p>This is noty</p>
                 </div>
-              </li><li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-3.png" alt="film 1">
+              </li>
+              <li class="noty-details" onclick="mark_readed(this)">
+                <img src="./assets/images/movie-3.png" alt="film 1" />
                 <div class="noty-details-content">
-                  <h4>Thong bao thu 4</h4>
+                  <h6>Thong bao thu 4</h6>
                   <p>Mua goi ưu đãi trở thành member của netflop</p>
                 </div>
               </li>
               <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-4.png" alt="film 1">
+                <img src="./assets/images/movie-4.png" alt="film 1" />
                 <div class="noty-details-content">
-                  <h4>Chỉ còn 1 ngày duy nhất</h4>
+                  <h6>Chỉ còn 1 ngày duy nhất</h6>
                   <p>Hãy đk thành viên ngay</p>
                 </div>
               </li>
               <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/series-2.png" alt="film 1">
+                <img src="./assets/images/series-2.png" alt="film 1" />
                 <div class="noty-details-content">
-                  <h4>Nếu em đi</h4>
+                  <h6>Nếu em đi</h6>
                   <p>Trái tim này buần biết mấy</p>
                 </div>
               </li>
-              
             </ul>
           </div>
         </div>
@@ -154,12 +159,12 @@
       <nav class="navbar" data-navbar>
         <div class="navbar-top">
           <!-- <a href="./index.html" class="logo">
-            <img src="./assets/images/logo.svg" alt="NetFlop logo">
-          </a> -->
+          <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
+        </a> -->
           <!-- <button class="btn btn-primary">
-              <ion-icon name="videocam-outline"></ion-icon> NetFlop
-            </button> -->
-            <a href="./index-with-login.html" class="logo-index">Netflop</a>
+          <ion-icon name="videocam-outline"></ion-icon> NetFlop
+         </button> -->
+          <h2 class="logo-index">Netflop</h2>
 
           <button class="menu-close-btn" data-menu-close-btn>
             <ion-icon name="close-outline"></ion-icon>
@@ -168,11 +173,11 @@
 
         <ul class="navbar-list">
           <!-- <li>
-            <a href="./index-with-login.html" class="navbar-link">Home</a>
-          </li> -->
+          <a href="./index-with-login.html" class="navbar-link">Home</a>
+        </li> -->
 
           <li>
-            <a href="#" class="navbar-link">Movie</a>
+            <a href="page-of-film-with-login.html" class="navbar-link">Movie</a>
           </li>
 
           <li>
@@ -997,7 +1002,7 @@
         - #CTA
       -->
 
-      <section class="cta">
+      <!-- <section class="cta">
         <div class="container">
           <div class="title-wrapper">
             <h2 class="cta-title">Receive free notifications</h2>
@@ -1013,7 +1018,7 @@
             <button type="submit" class="cta-form-btn" onclick="receive()">Get started</button>
           </form>
         </div>
-      </section>
+      </section> -->
     </article>
   </main>
 
@@ -1040,7 +1045,7 @@
             </li> -->
 
             <li>
-              <a href="#" class="footer-link">Movie</a>
+              <a href="page-of-film-with-login.html" class="footer-link">Movie</a>
             </li>
 
             <li>
@@ -1139,6 +1144,8 @@
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!-- framework UI -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.8.1/js/foundation.min.js" integrity="sha512-HugKDgJVjWdi/RfSbpjwOPqBhO2AQ6TuETbq7eGGutNulCWxZuERGwK9RutFQ/rbogsqpmfOtqJpFy2Y4AeJcQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- boostrap -->
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

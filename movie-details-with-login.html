@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflop Details with login</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Netflop Details with login</title>
+    <!-- link boostrap -->
+    <link
+      rel="stylesheet"
+      href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <!-- icon -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
-  <!-- link boostrap -->
-  <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
-  <!-- icon -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
 
-  <!-- favicon -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+    <!-- custom css link-->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!--google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-  <!-- custom css link-->
-  <link rel="stylesheet" href="./assets/css/style.css" />
-  <!--google font link-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-
-<!-- 
+  <!-- 
     - #HEADER
   -->
 
-<body id="top">
-  <header class="header" data-header>
-    <div class="container">
-      <div class="overlay" data-overlay></div>
+  <body id="top">
+    <header class="header" data-header>
+      <div class="container">
+        <div class="overlay" data-overlay></div>
 
-      <!-- <a href="./index.html" class="logo">
+        <!-- <a href="./index.html" class="logo">
         <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
       </a> -->
-      <!-- <button class="btn btn-primary">
+        <!-- <button class="btn btn-primary">
         <ion-icon name="videocam-outline"></ion-icon> NetFlop
        </button> -->
-      <a href="index-with-login.html">
-        <h1 class="logo-index">Netflop</h1>
-      </a>
+        <a href="index-with-login.html">
+          <h1 class="logo-index">Netflop</h1>
+        </a>
 
-      <div class="header-actions">
-        <!-- search-button -->
-        <div id="searchbar" class="collapsed">
-          <div id="search-box">
-            <div id="sliding-panel-outer">
-              <div id="sliding-panel-inner">
-                <input type="text" id="search-input" placeholder="Text here to search" />
-                <button id="search-submit">Search</button>
+        <div class="header-actions">
+          <!-- search-button -->
+          <div id="searchbar" class="collapsed">
+            <div id="search-box">
+              <div id="sliding-panel-outer">
+                <div id="sliding-panel-inner">
+                  <input
+                    type="text"
+                    id="search-input"
+                    placeholder="Text here to search"
+                  />
+                  <button id="search-submit">Search</button>
+                </div>
+                <!--#sliding-panel-inner-->
               </div>
-              <!--#sliding-panel-inner-->
-            </div>
-            <!--#sliding-panel-outer-->
+              <!--#sliding-panel-outer-->
 
-            <div class="search-label">
-              <i class="fa fa-search"></i>
-              <i class="fa fa-times"></i>
+              <div class="search-label">
+                <i class="fa fa-search"></i>
+                <i class="fa fa-times"></i>
+              </div>
             </div>
+            <!--#search-box-->
           </div>
-          <!--#search-box-->
-        </div>
-        <!--#searchbar-->
+          <!--#searchbar-->
 
-        <!-- <div class="lang-wrapper">
+          <!-- <div class="lang-wrapper">
         <label for="language">
           <ion-icon name="globe-outline"></ion-icon>
         </label>
@@ -79,207 +95,213 @@
           <option value="tu">TU</option>
         </select>
       </div> -->
-        <!-- <a href="login.html">
+          <!-- <a href="login.html">
         <button class="btn btn-primary">Sign in</button>
       </a> -->
-        <div class="dropdown">
-          <button onclick="F_Dropdown()" class="dropbtn">
-            <div class="avt-user">
-              <i class="fa-regular fa-circle-user"></i>
-              <span>Đạt</span>
-              <i class="fa-solid fa-caret-down"></i>
+          <div class="dropdown">
+            <button onclick="F_Dropdown()" class="dropbtn">
+              <div class="avt-user">
+                <i class="fa-regular fa-circle-user"></i>
+                <span>Đạt</span>
+                <i class="fa-solid fa-caret-down"></i>
+              </div>
+            </button>
+
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Logout</a>
+              <a href="#">History</a>
             </div>
-          </button>
+          </div>
 
-          <div id="myDropdown" class="dropdown-content">
-            <a href="#">Logout</a>
-            <a href="#">History</a>
+          <!-- noty -->
+          <div class="header-actions-notify">
+            <i class="fa-solid fa-bell notify-icon position-relative"></i>
+            <span
+              class="position-absolute top-10 start-100 badge text-bg-secondary"
+              >5</span
+            >
+            <div class="notify">
+              <header class="header-noty">Thông báo mới nhận</header>
+              <ul class="noty-list">
+                <li class="noty-details" onclick="mark_readed(this)">
+                  <img src="./assets/images/movie-1.png" alt="film 1" />
+                  <div class="noty-details-content">
+                    <h6>Title noty</h6>
+                    <p>Xin chao. fgoho</p>
+                  </div>
+                </li>
+                <li class="noty-details" onclick="mark_readed(this)">
+                  <img src="./assets/images/movie-2.png" alt="film 1" />
+                  <div class="noty-details-content">
+                    <h6>Day la thong bao tu dong</h6>
+                    <p>This is noty</p>
+                  </div>
+                </li>
+                <li class="noty-details" onclick="mark_readed(this)">
+                  <img src="./assets/images/movie-3.png" alt="film 1" />
+                  <div class="noty-details-content">
+                    <h6>Thong bao thu 4</h6>
+                    <p>Mua goi ưu đãi trở thành member của netflop</p>
+                  </div>
+                </li>
+                <li class="noty-details" onclick="mark_readed(this)">
+                  <img src="./assets/images/movie-4.png" alt="film 1" />
+                  <div class="noty-details-content">
+                    <h6>Chỉ còn 1 ngày duy nhất</h6>
+                    <p>Hãy đk thành viên ngay</p>
+                  </div>
+                </li>
+                <li class="noty-details" onclick="mark_readed(this)">
+                  <img src="./assets/images/series-2.png" alt="film 1" />
+                  <div class="noty-details-content">
+                    <h6>Nếu em đi</h6>
+                    <p>Trái tim này buần biết mấy</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <!-- noty -->
-        <div class="header-actions-notify">
-          <i class="fa-solid fa-bell notify-icon position-relative"></i>
-          <span class="position-absolute top-10 start-100 badge text-bg-secondary">5</span>
-          <div class="notify">
-            <header class="header-noty">Thông báo mới nhận</header>
-            <ul class="noty-list">
-              <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-1.png" alt="film 1" />
-                <div class="noty-details-content">
-                  <h6>Title noty</h6>
-                  <p>Xin chao. fgoho</p>
-                </div>
-              </li>
-              <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-2.png" alt="film 1" />
-                <div class="noty-details-content">
-                  <h6>Day la thong bao tu dong</h6>
-                  <p>This is noty</p>
-                </div>
-              </li>
-              <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-3.png" alt="film 1" />
-                <div class="noty-details-content">
-                  <h6>Thong bao thu 4</h6>
-                  <p>Mua goi ưu đãi trở thành member của netflop</p>
-                </div>
-              </li>
-              <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/movie-4.png" alt="film 1" />
-                <div class="noty-details-content">
-                  <h6>Chỉ còn 1 ngày duy nhất</h6>
-                  <p>Hãy đk thành viên ngay</p>
-                </div>
-              </li>
-              <li class="noty-details" onclick="mark_readed(this)">
-                <img src="./assets/images/series-2.png" alt="film 1" />
-                <div class="noty-details-content">
-                  <h6>Nếu em đi</h6>
-                  <p>Trái tim này buần biết mấy</p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        <button class="menu-open-btn" data-menu-open-btn>
+          <ion-icon name="reorder-two"></ion-icon>
+        </button>
 
-      <button class="menu-open-btn" data-menu-open-btn>
-        <ion-icon name="reorder-two"></ion-icon>
-      </button>
-
-      <nav class="navbar" data-navbar>
-        <div class="navbar-top">
-          <!-- <a href="./index.html" class="logo">
+        <nav class="navbar" data-navbar>
+          <div class="navbar-top">
+            <!-- <a href="./index.html" class="logo">
             <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
           </a> -->
-          <!-- <button class="btn btn-primary">
+            <!-- <button class="btn btn-primary">
             <ion-icon name="videocam-outline"></ion-icon> NetFlop
            </button> -->
-          <h2 class="logo-index">Netflop</h2>
+            <h2 class="logo-index">Netflop</h2>
 
-          <button class="menu-close-btn" data-menu-close-btn>
-            <ion-icon name="close-outline"></ion-icon>
-          </button>
-        </div>
+            <button class="menu-close-btn" data-menu-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+          </div>
 
-        <ul class="navbar-list">
-          <!-- <li>
+          <ul class="navbar-list">
+            <!-- <li>
             <a href="./index-with-login.html" class="navbar-link">Home</a>
           </li> -->
 
-          <li>
-            <a href="#" class="navbar-link">Movie</a>
-          </li>
+            <li>
+              <a href="page-of-film-with-login.html" class="navbar-link">Movie</a>
+            </li>
 
-          <li>
-            <a href="#" class="navbar-link">Tv Show</a>
-          </li>
+            <li>
+              <a href="#" class="navbar-link">Tv Show</a>
+            </li>
 
-          <li>
-            <a href="#" class="navbar-link">Web Series</a>
-          </li>
+            <li>
+              <a href="#" class="navbar-link">Web Series</a>
+            </li>
 
-          <li>
-            <a href="#" class="navbar-link">About Us</a>
-          </li>
-        </ul>
+            <li>
+              <a href="#" class="navbar-link">About Us</a>
+            </li>
+          </ul>
 
-        <ul class="navbar-social-list">
-          <li>
-            <a href="#" class="navbar-social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
+          <ul class="navbar-social-list">
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
 
-          <li>
-            <a href="#" class="navbar-social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
 
-          <li>
-            <a href="#" class="navbar-social-link">
-              <ion-icon name="logo-pinterest"></ion-icon>
-            </a>
-          </li>
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-pinterest"></ion-icon>
+              </a>
+            </li>
 
-          <li>
-            <a href="#" class="navbar-social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
 
-          <li>
-            <a href="#" class="navbar-social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+            <li>
+              <a href="#" class="navbar-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-  <main>
-    <article>
-      <!-- 
+    <main>
+      <article>
+        <!-- 
         - #MOVIE DETAIL
       -->
 
-      <section class="movie-detail">
-        <div class="container">
-          <figure class="movie-detail-banner">
-            <img src="./assets/images/movie-4.png" alt="Free guy movie poster" />
+        <section class="movie-detail">
+          <div class="container">
+            <figure class="movie-detail-banner">
+              <img
+                src="./assets/images/movie-4.png"
+                alt="Free guy movie poster"
+              />
 
-            <!-- <button class="play-btn">
+              <!-- <button class="play-btn">
               <ion-icon name="play-circle-outline"></ion-icon>
             </button> -->
-          </figure>
+            </figure>
 
-          <div class="movie-detail-content">
-            <p class="detail-subtitle">New Episodes</p>
+            <div class="movie-detail-content">
+              <p class="detail-subtitle">New Episodes</p>
 
-            <h1 class="h1 detail-title">Name's <strong>Film</strong></h1>
+              <h1 class="h1 detail-title">Name's <strong>Film</strong></h1>
 
-            <div class="meta-wrapper">
-              <div class="badge-wrapper">
-                <div class="badge badge-fill">PG 13</div>
+              <div class="meta-wrapper">
+                <div class="badge-wrapper">
+                  <div class="badge badge-fill">PG 13</div>
 
-                <div class="badge badge-outline">HD</div>
-              </div>
-
-              <div class="ganre-wrapper">
-                <a href="#">Comedy,</a>
-
-                <a href="#">Action,</a>
-
-                <a href="#">Adventure,</a>
-
-                <a href="#">Science Fiction</a>
-              </div>
-
-              <div class="date-time">
-                <div>
-                  <ion-icon name="calendar-outline"></ion-icon>
-
-                  <time datetime="2021">6-7-2002</time>
+                  <div class="badge badge-outline">HD</div>
                 </div>
 
-                <div>
-                  <ion-icon name="time-outline"></ion-icon>
+                <div class="ganre-wrapper">
+                  <a href="#">Comedy,</a>
 
-                  <time datetime="PT115M">115 min</time>
+                  <a href="#">Action,</a>
+
+                  <a href="#">Adventure,</a>
+
+                  <a href="#">Science Fiction</a>
+                </div>
+
+                <div class="date-time">
+                  <div>
+                    <ion-icon name="calendar-outline"></ion-icon>
+
+                    <time datetime="2021">6-7-2002</time>
+                  </div>
+
+                  <div>
+                    <ion-icon name="time-outline"></ion-icon>
+
+                    <time datetime="PT115M">115 min</time>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <p class="storyline">
-              A bank teller called Guy realizes he is a background character
-              in an open world video game called Free City that will soon go
-              offline.
-            </p>
+              <p class="storyline">
+                A bank teller called Guy realizes he is a background character
+                in an open world video game called Free City that will soon go
+                offline.
+              </p>
 
-            <div class="rate-in-film">
+              <!-- <div class="rate-in-film">
               <div class="point">
                 <h2>9.5</h2>
               </div>
@@ -301,688 +323,1312 @@
                   <p>2023 (the number of rating) reviews</p>
                 </div>
               </div>
-            </div>
+            </div> -->
 
-            <div class="details-actions">
-              <button class="share">
-                <ion-icon name="share-social"></ion-icon>
+              <div class="details-actions">
+                <button class="share">
+                  <ion-icon name="share-social"></ion-icon>
 
-                <span>Share</span>
-              </button>
+                  <span>Share</span>
+                </button>
 
-              <div class="title-wrapper">
-                <p class="title">Prime Video</p>
+                <div class="title-wrapper">
+                  <p class="title">Prime Video</p>
 
-                <p class="text">Streaming Channels</p>
+                  <p class="text">Streaming Channels</p>
+                </div>
+
+                <button class="btn btn-primary">
+                  <ion-icon name="play"></ion-icon>
+
+                  <span>Watch Now</span>
+                </button>
+
+                <button class="btn btn-primary" onclick="click_follow()">
+                  <!-- <ion-icon name="play"></ion-icon> -->
+                  <i class="fa-solid fa-circle-plus"></i>
+                  <span>Follow Film</span>
+                </button>
               </div>
 
-              <button class="btn btn-primary">
-                <ion-icon name="play"></ion-icon>
-
-                <span>Watch Now</span>
-              </button>
-            </div>
-
-            <!-- <a href="./assets/images/movie-4.png" download class="download-btn">
+              <!-- <a href="./assets/images/movie-4.png" download class="download-btn">
             <span>Download</span>
 
             <ion-icon name="download-outline"></ion-icon>
           </a> -->
-          </div>
-        </div>
-      </section>
-
-      <section>
-        <div class="media-film">
-          <p>Media of film</p>
-          <div class="wrapper-media">
-            <i id="left" class="fa-solid fa-angle-left"></i>
-            <div class="carousel">
-              <img src="./assets/images/movie-1.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-2.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-3.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-4.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-5.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-6.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-7.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-8.png" alt="img" draggable="false" />
-              <img src="./assets/images/movie-1.png" alt="img" draggable="false" />
+          <div class="inf-creater-actor">
+            <div class="creater">
+              <h2 class="title-create-actor">Creater</h2>
+              <div class="control-create-actor">
+                <img
+                  src="https://image.tmdb.org/t/p/w92/5d6wkYnJgkVAzThqnnwOLNDzACM.jpg"
+                  alt=""
+                />
+                <div class="text-creater-actor">
+                  <h6>Michael Waldron</h6>
+                  <p>Creater</p>
+                </div>
+              </div>
             </div>
-            <i id="right" class="fa-solid fa-angle-right"></i>
-          </div>
-        </div>
-      </section>
-
-      <div class="review-of-user">
-        <div class="review-of-user-control">
-          <div class="review-of-user-title-more">
-            <h1>User reviews</h1>
-            <div class="wrapper-more-less">
-              <button id="myBtn-more-less" onclick="showMore()">
-                <i class="more fa-solid fa-angles-right"></i>
-              </button>
+            <div class="actor">
+              <h2 class="title-create-actor">Actor</h2>
+              <div class="actors">
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/mclHxMm8aPlCPKptP67257F5GPo.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Sophia Di Martino</h6>
+                    <p>Sylvie / The Variant</p>
+                  </div>
+                </div>
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/mWDsVCo9sBcekrsjUTsoCFLhtYt.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Wunmi Mosaku</h6>
+                    <p>Hunter B-15</p>
+                  </div>
+                </div>
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/waruLSR8lXBjhAFL0J6ihuVY62d.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Eugene Cordero</h6>
+                    <p>Casey</p>
+                  </div>
+                </div>
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/9PaSpVV6aU3rtFXG7oOpnEu92gv.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Rafael Casal</h6>
+                    <p>Hunter X-5</p>
+                  </div>
+                </div>
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/5PfYVcNLs1gGKIo0qwJrvyc2UOZ.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Ke Huy Quan</h6>
+                    <p>Ouroboros 'OB'</p>
+                  </div>
+                </div>
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/ptiUjN2YcXbvCr6xawMFX9lYezk.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Owen Wilson</h6>
+                    <p>Mobius M. Mobius</p>
+                  </div>
+                </div>
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/6iQd1y72ym3eRAzslSRChdbBQrS.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Gugu Mbatha-Raw</h6>
+                    <p>Ravonna Renslayer</p>
+                  </div>
+                </div>
+                <div class="control-create-actor control-actor">
+                  <img
+                    src="https://image.tmdb.org/t/p/w92/y9S3QzI3L5aARP8GYYO86rREKxU.jpg"
+                    alt=""
+                  />
+                  <div class="text-creater-actor">
+                    <h6>Tara Strong</h6>
+                    <p>Miss Minutes (voice)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>-
             </div>
           </div>
 
-          <div class="add-cmt">
-            <p class="d-inline-flex gap-1">
-              <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button"
-                aria-expanded="false" aria-controls="collapseExample">
-                + Add review
-              </a>
-            </p>
-            <div class="collapse" id="collapseExample">
-              <div class="card card-body">
-                <img src="./assets/images/movie-1.png" alt="" />
+         
+        </section>
 
-                <div class="form-popup">
-                  <form action="" class="form-container">
-                    <div class="rateing-film-the-cmt">
-                      <h5>Your Rating</h5>
-                      <div class="stars">
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
-                        <i class="fa-regular fa-solid fa-star"></i>
+        <section>
+          <div class="media-film">
+            <p>Media of film</p>
+            <div class="wrapper-media">
+              <i id="left" class="fa-solid fa-angle-left"></i>
+              <div class="carousel">
+                <img
+                  src="./assets/images/movie-1.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-2.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-3.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-4.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-5.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-6.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-7.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-8.png"
+                  alt="img"
+                  draggable="false"
+                />
+                <img
+                  src="./assets/images/movie-1.png"
+                  alt="img"
+                  draggable="false"
+                />
+              </div>
+              <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+          </div>
+        </section>
+
+        <div class="review-of-user">
+          <div class="review-of-user-control">
+            <div class="review-of-user-title-more">
+              <h1>User reviews</h1>
+              <div class="wrapper-more-less">
+                <button id="myBtn-more-less" onclick="showMore()">
+                  <i class="more fa-solid fa-angles-right"></i>
+                </button>
+              </div>
+            </div>
+
+            <div class="add-cmt">
+              <p class="d-inline-flex gap-1">
+                <a
+                  class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  href="#collapseExample"
+                  role="button"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  + Add review
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <img src="./assets/images/movie-1.png" alt="" />
+                  <div class="form-popup">
+                    <form action="" class="form-container">
+                      <div class="rateing-film-the-cmt">
+                        <h5>Your Rating</h5>
+                        <div class="stars">
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                          <i class="fa-regular fa-solid fa-star"></i>
+                        </div>
+                      </div>
+                      <div class="your-review">
+                        <textarea
+                          name=""
+                          id=""
+                          cols="40"
+                          rows="7"
+                          placeholder="Text your comment "
+                        ></textarea>
+                        <button type="submit" class="btn-form-review">
+                          Submit
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cmt-of-users-box">
+            <div class="cmt-of-user-box">
+              <div class="cmt-of-user-box-cmt">
+                <div class="inf-user">
+                  <i class="fa-solid fa-user-check"></i>
+                  <h4>Your cmt</h4>
+                </div>
+                <p>it is the great film.Amazing, good job</p>
+              </div>
+              <div class="control-inf-rate">
+                <div class="control-inf-rate-star">
+                  <ion-icon
+                    name="star"
+                    class="control-inf-rate-star-star"
+                  ></ion-icon>
+                  <div>10/10</div>
+                </div>
+                <div class="btn-group dropend">
+                  <button
+                    type="button"
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <li>
+                      <button class="dropdown-item" type="button" onclick="confirm_delete_cmt()">
+                        Delete
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="openForm()"
+                      >
+                        Report
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-popup-report" id="myForm">
+                  <form action="" class="form-container-report">
+                    <div class="narbar-report">
+                      <i class="fa-solid fa-x" onclick="closeForm()"></i>
+                    </div>
+                    <div class="body-report">
+                      <div class="inf-film-report">
+                        <img src="./assets/images/movie-1.png" alt="" />
+                        <div class="inf-film-report-text">
+                          <p>Avangers: Infinity War (2018)</p>
+
+                          <h5>Report Item</h5>
+                        </div>
+                      </div>
+                      <div class="title-reason-report">
+                        <p>REASON FOR REPORTING ITEM</p>
+                      </div>
+                      <div class="reason-report-and-submit">
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="1"
+                          />
+                          <p>Người dùng spoid phim.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel2"
+                            value=""
+                            aria-label="2"
+                          />
+                          <p>Người dùng có ngôn từ đả kích.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel3"
+                            value=""
+                            aria-label="3"
+                          />
+                          <p>
+                            Bình luận có chứa nội dung cấm (18+, cá độ, cờ bạc,
+                            ...)
+                          </p>
+                        </div>
+                        <h5>Please explain your reason</h5>
+                        <textarea
+                          class="textarea-report"
+                          name=""
+                          id=""
+                          cols=""
+                          rows="3"
+                          placeholder="Write your explanation here "
+                        ></textarea>
+
+                        <button type="submit" class="btn-form">Submit</button>
                       </div>
                     </div>
-                    <div class="your-review">
-                      <textarea name="" id="" cols="40" rows="7" placeholder="Text your comment "></textarea>
-                      <button type="submit" class="btn-form-review">
-                        Submit
-                      </button>
-                    </div>
+                    <div class="footer-report"></div>
                   </form>
                 </div>
               </div>
             </div>
+
+           
           </div>
-        </div>
-
-        <div class="cmt-of-users-box">
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
+          <div class="cmt-of-users-box">
+            <div class="cmt-of-user-box">
+              <div class="cmt-of-user-box-cmt">
+                <div class="inf-user">
+                  <i class="fa-solid fa-user-check"></i>
+                  <h4>đoanat</h4>
+                </div>
+                <p>it is the great film.Amazing, good job</p>
               </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="btn-group dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      Action
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button">
-                      Another action
-                    </button>
-                  </li>
-                  <li>
-                    <button class="dropdown-item" type="button" onclick="openForm()">
-                      Report
-                    </button>
-                  </li>
-                </ul>
-              </div>
-              <div class="form-popup-report" id="myForm">
-                <form action="" class="form-container-report">
-                  <div class="narbar-report">
-                    <i class="fa-solid fa-x" onclick="closeForm()"></i>
-                  </div>
-                  <div class="body-report">
-                    <div class="inf-film-report">
-                      <img src="./assets/images/movie-1.png" alt="">
-                      <div class="inf-film-report-text">
-
-                        <p>Avangers: Infinity War (2018)</p>
-
-                        <h5>Report Item</h5>
-
-                      </div>
-                    </div>
-                    <div class="title-reason-report">
-                      <p>
-                        REASON FOR REPORTING ITEM
-                      </p>
-                    </div>
-                    <div class="reason-report-and-submit">
-                      <div class="reason-report">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value=""
-                          aria-label="1">
-                        <p>Người dùng spoid phim</p>
-                      </div>
-                      <div class="reason-report">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel2" value=""
-                          aria-label="2">
-                        <p>Người dùng ngôn từ đả kích</p>
-                      </div>
-                      <div class="reason-report">
-                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel3" value=""
-                          aria-label="3">
-                        <p>Nội dung bình luận có chứa nội dung cấm (18+, cá độ, cờ bạc, ...)</p>
-                      </div>
-                      <h5>Please explain your reason</h5>
-                      <textarea class="textarea-report" name="" id="" cols="" rows="3"
-                        placeholder="Write your explanation here "></textarea>
-
-                      <button type="submit" class="btn-form">
-                        Submit
+              <div class="control-inf-rate">
+                <div class="control-inf-rate-star">
+                  <ion-icon
+                    name="star"
+                    class="control-inf-rate-star-star"
+                  ></ion-icon>
+                  <div>10/10</div>
+                </div>
+                <div class="btn-group dropend">
+                  <button
+                    type="button"
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Action
                       </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="openForm()"
+                      >
+                        Report
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-popup-report" id="myForm">
+                  <form action="" class="form-container-report">
+                    <div class="narbar-report">
+                      <i class="fa-solid fa-x" onclick="closeForm()"></i>
                     </div>
-                  </div>
-                  <div class="footer-report"></div>
-                </form>
+                    <div class="body-report">
+                      <div class="inf-film-report">
+                        <img src="./assets/images/movie-1.png" alt="" />
+                        <div class="inf-film-report-text">
+                          <p>Avangers: Infinity War (2018)</p>
+
+                          <h5>Report Item</h5>
+                        </div>
+                      </div>
+                      <div class="title-reason-report">
+                        <p>REASON FOR REPORTING ITEM</p>
+                      </div>
+                      <div class="reason-report-and-submit">
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="1"
+                          />
+                          <p>Người dùng spoid phim.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel2"
+                            value=""
+                            aria-label="2"
+                          />
+                          <p>Người dùng có ngôn từ đả kích.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel3"
+                            value=""
+                            aria-label="3"
+                          />
+                          <p>
+                            Bình luận có chứa nội dung cấm (18+, cá độ, cờ bạc,
+                            ...)
+                          </p>
+                        </div>
+                        <h5>Please explain your reason</h5>
+                        <textarea
+                          class="textarea-report"
+                          name=""
+                          id=""
+                          cols=""
+                          rows="3"
+                          placeholder="Write your explanation here "
+                        ></textarea>
+
+                        <button type="submit" class="btn-form">Submit</button>
+                      </div>
+                    </div>
+                    <div class="footer-report"></div>
+                  </form>
+                </div>
               </div>
             </div>
+
+           
+          </div>
+          <div class="cmt-of-users-box">
+            <div class="cmt-of-user-box">
+              <div class="cmt-of-user-box-cmt">
+                <div class="inf-user">
+                  <i class="fa-solid fa-user-check"></i>
+                  <h4>đoanat</h4>
+                </div>
+                <p>it is the great film.Amazing, good job</p>
+              </div>
+              <div class="control-inf-rate">
+                <div class="control-inf-rate-star">
+                  <ion-icon
+                    name="star"
+                    class="control-inf-rate-star-star"
+                  ></ion-icon>
+                  <div>10/10</div>
+                </div>
+                <div class="btn-group dropend">
+                  <button
+                    type="button"
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Action
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="openForm()"
+                      >
+                        Report
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-popup-report" id="myForm">
+                  <form action="" class="form-container-report">
+                    <div class="narbar-report">
+                      <i class="fa-solid fa-x" onclick="closeForm()"></i>
+                    </div>
+                    <div class="body-report">
+                      <div class="inf-film-report">
+                        <img src="./assets/images/movie-1.png" alt="" />
+                        <div class="inf-film-report-text">
+                          <p>Avangers: Infinity War (2018)</p>
+
+                          <h5>Report Item</h5>
+                        </div>
+                      </div>
+                      <div class="title-reason-report">
+                        <p>REASON FOR REPORTING ITEM</p>
+                      </div>
+                      <div class="reason-report-and-submit">
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="1"
+                          />
+                          <p>Người dùng spoid phim.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel2"
+                            value=""
+                            aria-label="2"
+                          />
+                          <p>Người dùng có ngôn từ đả kích.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel3"
+                            value=""
+                            aria-label="3"
+                          />
+                          <p>
+                            Bình luận có chứa nội dung cấm (18+, cá độ, cờ bạc,
+                            ...)
+                          </p>
+                        </div>
+                        <h5>Please explain your reason</h5>
+                        <textarea
+                          class="textarea-report"
+                          name=""
+                          id=""
+                          cols=""
+                          rows="3"
+                          placeholder="Write your explanation here "
+                        ></textarea>
+
+                        <button type="submit" class="btn-form">Submit</button>
+                      </div>
+                    </div>
+                    <div class="footer-report"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+          <div class="cmt-of-users-box">
+            <div class="cmt-of-user-box">
+              <div class="cmt-of-user-box-cmt">
+                <div class="inf-user">
+                  <i class="fa-solid fa-user-check"></i>
+                  <h4>đoanat</h4>
+                </div>
+                <p>it is the great film.Amazing, good job</p>
+              </div>
+              <div class="control-inf-rate">
+                <div class="control-inf-rate-star">
+                  <ion-icon
+                    name="star"
+                    class="control-inf-rate-star-star"
+                  ></ion-icon>
+                  <div>10/10</div>
+                </div>
+                <div class="btn-group dropend">
+                  <button
+                    type="button"
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Action
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="openForm()"
+                      >
+                        Report
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-popup-report" id="myForm">
+                  <form action="" class="form-container-report">
+                    <div class="narbar-report">
+                      <i class="fa-solid fa-x" onclick="closeForm()"></i>
+                    </div>
+                    <div class="body-report">
+                      <div class="inf-film-report">
+                        <img src="./assets/images/movie-1.png" alt="" />
+                        <div class="inf-film-report-text">
+                          <p>Avangers: Infinity War (2018)</p>
+
+                          <h5>Report Item</h5>
+                        </div>
+                      </div>
+                      <div class="title-reason-report">
+                        <p>REASON FOR REPORTING ITEM</p>
+                      </div>
+                      <div class="reason-report-and-submit">
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="1"
+                          />
+                          <p>Người dùng spoid phim.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel2"
+                            value=""
+                            aria-label="2"
+                          />
+                          <p>Người dùng có ngôn từ đả kích.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel3"
+                            value=""
+                            aria-label="3"
+                          />
+                          <p>
+                            Bình luận có chứa nội dung cấm (18+, cá độ, cờ bạc,
+                            ...)
+                          </p>
+                        </div>
+                        <h5>Please explain your reason</h5>
+                        <textarea
+                          class="textarea-report"
+                          name=""
+                          id=""
+                          cols=""
+                          rows="3"
+                          placeholder="Write your explanation here "
+                        ></textarea>
+
+                        <button type="submit" class="btn-form">Submit</button>
+                      </div>
+                    </div>
+                    <div class="footer-report"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+          <div class="cmt-of-users-box">
+            <div class="cmt-of-user-box">
+              <div class="cmt-of-user-box-cmt">
+                <div class="inf-user">
+                  <i class="fa-solid fa-user-check"></i>
+                  <h4>đoanat</h4>
+                </div>
+                <p>it is the great film.Amazing, good job</p>
+              </div>
+              <div class="control-inf-rate">
+                <div class="control-inf-rate-star">
+                  <ion-icon
+                    name="star"
+                    class="control-inf-rate-star-star"
+                  ></ion-icon>
+                  <div>10/10</div>
+                </div>
+                <div class="btn-group dropend">
+                  <button
+                    type="button"
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Action
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="openForm()"
+                      >
+                        Report
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-popup-report" id="myForm">
+                  <form action="" class="form-container-report">
+                    <div class="narbar-report">
+                      <i class="fa-solid fa-x" onclick="closeForm()"></i>
+                    </div>
+                    <div class="body-report">
+                      <div class="inf-film-report">
+                        <img src="./assets/images/movie-1.png" alt="" />
+                        <div class="inf-film-report-text">
+                          <p>Avangers: Infinity War (2018)</p>
+
+                          <h5>Report Item</h5>
+                        </div>
+                      </div>
+                      <div class="title-reason-report">
+                        <p>REASON FOR REPORTING ITEM</p>
+                      </div>
+                      <div class="reason-report-and-submit">
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="1"
+                          />
+                          <p>Người dùng spoid phim.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel2"
+                            value=""
+                            aria-label="2"
+                          />
+                          <p>Người dùng có ngôn từ đả kích.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel3"
+                            value=""
+                            aria-label="3"
+                          />
+                          <p>
+                            Bình luận có chứa nội dung cấm (18+, cá độ, cờ bạc,
+                            ...)
+                          </p>
+                        </div>
+                        <h5>Please explain your reason</h5>
+                        <textarea
+                          class="textarea-report"
+                          name=""
+                          id=""
+                          cols=""
+                          rows="3"
+                          placeholder="Write your explanation here "
+                        ></textarea>
+
+                        <button type="submit" class="btn-form">Submit</button>
+                      </div>
+                    </div>
+                    <div class="footer-report"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+          <div class="cmt-of-users-box">
+            <div class="cmt-of-user-box">
+              <div class="cmt-of-user-box-cmt">
+                <div class="inf-user">
+                  <i class="fa-solid fa-user-check"></i>
+                  <h4>đoanat</h4>
+                </div>
+                <p>it is the great film.Amazing, good job</p>
+              </div>
+              <div class="control-inf-rate">
+                <div class="control-inf-rate-star">
+                  <ion-icon
+                    name="star"
+                    class="control-inf-rate-star-star"
+                  ></ion-icon>
+                  <div>10/10</div>
+                </div>
+                <div class="btn-group dropend">
+                  <button
+                    type="button"
+                    class="dropdown-toggle"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <!-- Dropdown menu links -->
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Action
+                      </button>
+                    </li>
+                    <li>
+                      <button class="dropdown-item" type="button">
+                        Another action
+                      </button>
+                    </li>
+                    <li>
+                      <button
+                        class="dropdown-item"
+                        type="button"
+                        onclick="openForm()"
+                      >
+                        Report
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="form-popup-report" id="myForm">
+                  <form action="" class="form-container-report">
+                    <div class="narbar-report">
+                      <i class="fa-solid fa-x" onclick="closeForm()"></i>
+                    </div>
+                    <div class="body-report">
+                      <div class="inf-film-report">
+                        <img src="./assets/images/movie-1.png" alt="" />
+                        <div class="inf-film-report-text">
+                          <p>Avangers: Infinity War (2018)</p>
+
+                          <h5>Report Item</h5>
+                        </div>
+                      </div>
+                      <div class="title-reason-report">
+                        <p>REASON FOR REPORTING ITEM</p>
+                      </div>
+                      <div class="reason-report-and-submit">
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel1"
+                            value=""
+                            aria-label="1"
+                          />
+                          <p>Người dùng spoid phim.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel2"
+                            value=""
+                            aria-label="2"
+                          />
+                          <p>Người dùng có ngôn từ đả kích.</p>
+                        </div>
+                        <div class="reason-report">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="radioNoLabel"
+                            id="radioNoLabel3"
+                            value=""
+                            aria-label="3"
+                          />
+                          <p>
+                            Bình luận có chứa nội dung cấm (18+, cá độ, cờ bạc,
+                            ...)
+                          </p>
+                        </div>
+                        <h5>Please explain your reason</h5>
+                        <textarea
+                          class="textarea-report"
+                          name=""
+                          id=""
+                          cols=""
+                          rows="3"
+                          placeholder="Write your explanation here "
+                        ></textarea>
+
+                        <button type="submit" class="btn-form">Submit</button>
+                      </div>
+                    </div>
+                    <div class="footer-report"></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+           
           </div>
 
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <div>10/10</div>
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="cmt-of-user-box">
-            <div class="cmt-of-user-box-cmt">
-              <div class="inf-user">
-                <i class="fa-solid fa-user-check"></i>
-                <h4>đoanat</h4>
-              </div>
-              <p>it is the great film.Amazing, good job</p>
-            </div>
-            <div class="control-inf-rate">
-              <div class="control-inf-rate-star">
-                <ion-icon name="star" class="control-inf-rate-star-star"></ion-icon>
-                <span class="score-star">10</span>/10
-              </div>
-              <div class="dropend">
-                <button type="button" class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                  <i class="fa-solid fa-circle-exclamation"></i>
-                </button>
-                <ul class="dropdown-menu">
-                  <!-- Dropdown menu links -->
-                  <li class="dropdown-menu-item"><a href="">Delete</a></li>
-                  <li class="dropdown-menu-item"><a href="">Edit</a></li>
-                  <li class="dropdown-menu-item"><a href="">Report</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
 
-      <!-- 
+        <!-- 
         - #TV SERIES
       -->
 
-      <section class="tv-series">
-        <div class="container">
-          <p class="section-subtitle">Best TV Series</p>
+        <section class="tv-series">
+          <div class="container">
+            <p class="section-subtitle">Best TV Series</p>
 
-          <h2 class="h2 section-title">World Best TV Series</h2>
+            <h2 class="h2 section-title">World Best TV Series</h2>
 
-          <ul class="movies-list">
-            <li>
-              <div class="movie-card">
-                <a href="./movie-details.html">
-                  <figure class="card-banner">
-                    <img src="./assets/images/series-1.png" alt="Moon Knight movie poster" />
-                  </figure>
-                  <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
-                </a>
-
-                <div class="title-wrapper">
+            <ul class="movies-list">
+              <li>
+                <div class="movie-card">
                   <a href="./movie-details.html">
-                    <h3 class="card-title">Moon Knight</h3>
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/series-1.png"
+                        alt="Moon Knight movie poster"
+                      />
+                    </figure>
+                    <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
                   </a>
 
-                  <time datetime="2022">2022</time>
-                </div>
+                  <div class="title-wrapper">
+                    <a href="./movie-details.html">
+                      <h3 class="card-title">Moon Knight</h3>
+                    </a>
 
-                <div class="card-meta">
-                  <div class="badge badge-outline">2K</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT47M">47 min</time>
+                    <time datetime="2022">2022</time>
                   </div>
 
-                  <div class="rating">
-                    <ion-icon name="star"></ion-icon>
+                  <div class="card-meta">
+                    <div class="badge badge-outline">2K</div>
 
-                    <data>8.6</data>
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT47M">47 min</time>
+                    </div>
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+
+                      <data>8.6</data>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li>
-              <div class="movie-card">
-                <a href="./movie-details.html">
-                  <figure class="card-banner">
-                    <img src="./assets/images/series-2.png" alt="Halo movie poster" />
-                  </figure>
-                  <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
-                </a>
-
-                <div class="title-wrapper">
+              <li>
+                <div class="movie-card">
                   <a href="./movie-details.html">
-                    <h3 class="card-title">Halo</h3>
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/series-2.png"
+                        alt="Halo movie poster"
+                      />
+                    </figure>
+                    <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
                   </a>
 
-                  <time datetime="2022">2022</time>
-                </div>
+                  <div class="title-wrapper">
+                    <a href="./movie-details.html">
+                      <h3 class="card-title">Halo</h3>
+                    </a>
 
-                <div class="card-meta">
-                  <div class="badge badge-outline">2K</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT59M">59 min</time>
+                    <time datetime="2022">2022</time>
                   </div>
 
-                  <div class="rating">
-                    <ion-icon name="star"></ion-icon>
+                  <div class="card-meta">
+                    <div class="badge badge-outline">2K</div>
 
-                    <data>8.8</data>
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT59M">59 min</time>
+                    </div>
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+
+                      <data>8.8</data>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li>
-              <div class="movie-card">
-                <a href="./movie-details.html">
-                  <figure class="card-banner">
-                    <img src="./assets/images/series-3.png" alt="Vikings: Valhalla movie poster" />
-                  </figure>
-                  <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
-                </a>
-
-                <div class="title-wrapper">
+              <li>
+                <div class="movie-card">
                   <a href="./movie-details.html">
-                    <h3 class="card-title">Vikings: Valhalla</h3>
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/series-3.png"
+                        alt="Vikings: Valhalla movie poster"
+                      />
+                    </figure>
+                    <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
                   </a>
 
-                  <time datetime="2022">2022</time>
-                </div>
+                  <div class="title-wrapper">
+                    <a href="./movie-details.html">
+                      <h3 class="card-title">Vikings: Valhalla</h3>
+                    </a>
 
-                <div class="card-meta">
-                  <div class="badge badge-outline">2K</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT51M">51 min</time>
+                    <time datetime="2022">2022</time>
                   </div>
 
-                  <div class="rating">
-                    <ion-icon name="star"></ion-icon>
+                  <div class="card-meta">
+                    <div class="badge badge-outline">2K</div>
 
-                    <data>8.3</data>
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT51M">51 min</time>
+                    </div>
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+
+                      <data>8.3</data>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-            <li>
-              <div class="movie-card">
-                <a href="./movie-details.html">
-                  <figure class="card-banner">
-                    <img src="./assets/images/series-4.png" alt="Money Heist movie poster" />
-                  </figure>
-                  <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
-                </a>
-
-                <div class="title-wrapper">
+              <li>
+                <div class="movie-card">
                   <a href="./movie-details.html">
-                    <h3 class="card-title">Money Heist</h3>
+                    <figure class="card-banner">
+                      <img
+                        src="./assets/images/series-4.png"
+                        alt="Money Heist movie poster"
+                      />
+                    </figure>
+                    <!-- <span class="animation-blur"><i class="fa-solid fa-play"></i></span> -->
                   </a>
 
-                  <time datetime="2017">2017</time>
-                </div>
+                  <div class="title-wrapper">
+                    <a href="./movie-details.html">
+                      <h3 class="card-title">Money Heist</h3>
+                    </a>
 
-                <div class="card-meta">
-                  <div class="badge badge-outline">4K</div>
-
-                  <div class="duration">
-                    <ion-icon name="time-outline"></ion-icon>
-
-                    <time datetime="PT70M">70 min</time>
+                    <time datetime="2017">2017</time>
                   </div>
 
-                  <div class="rating">
-                    <ion-icon name="star"></ion-icon>
+                  <div class="card-meta">
+                    <div class="badge badge-outline">4K</div>
 
-                    <data>8.3</data>
+                    <div class="duration">
+                      <ion-icon name="time-outline"></ion-icon>
+
+                      <time datetime="PT70M">70 min</time>
+                    </div>
+
+                    <div class="rating">
+                      <ion-icon name="star"></ion-icon>
+
+                      <data>8.3</data>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </article>
-  </main>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
 
-  <!-- 
+    <!-- 
     - #FOOTER
   -->
 
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-brand-wrapper">
-          <!-- <a href="./index.html" class="logo">
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="footer-brand-wrapper">
+            <!-- <a href="./index.html" class="logo">
             <img src="./assets/images/Netflop-logo4.png" alt="Filmlane logo">
           </a> -->
-          <!-- <button class="btn btn-primary">
+            <!-- <button class="btn btn-primary">
             <ion-icon name="videocam-outline"></ion-icon> NetFlop
            </button> -->
-          <a href="index-with-login.html">
-            <h1 class="logo-index">Netflop</h1>
-          </a>
+            <a href="index-with-login.html">
+              <h1 class="logo-index">Netflop</h1>
+            </a>
 
-          <ul class="footer-list">
-            <!-- <li>
+            <ul class="footer-list">
+              <!-- <li>
               <a href="./index.html" class="footer-link">Home</a>
             </li> -->
 
-            <li>
-              <a href="#" class="footer-link">Movie</a>
-            </li>
+              <li>
+                <a href="page-of-film-with-login.html" class="footer-link">Movie</a>
+              </li>
 
-            <li>
-              <a href="#" class="footer-link">TV Show</a>
-            </li>
+              <li>
+                <a href="#" class="footer-link">TV Show</a>
+              </li>
 
-            <li>
-              <a href="#" class="footer-link">Web Series</a>
-            </li>
+              <li>
+                <a href="#" class="footer-link">Web Series</a>
+              </li>
 
-            <li>
-              <a href="#" class="footer-link">About Us</a>
-            </li>
-          </ul>
-        </div>
+              <li>
+                <a href="#" class="footer-link">About Us</a>
+              </li>
+            </ul>
+          </div>
 
-        <div class="divider"></div>
+          <div class="divider"></div>
 
-        <div class="quicklink-wrapper">
-          <ul class="quicklink-list">
-            <li>
-              <a href="#" class="quicklink-link">Faq</a>
-            </li>
+          <div class="quicklink-wrapper">
+            <ul class="quicklink-list">
+              <li>
+                <a href="#" class="quicklink-link">Faq</a>
+              </li>
 
-            <li>
-              <a href="#" class="quicklink-link">Help center</a>
-            </li>
+              <li>
+                <a href="#" class="quicklink-link">Help center</a>
+              </li>
 
-            <li>
-              <a href="#" class="quicklink-link">Terms of use</a>
-            </li>
+              <li>
+                <a href="#" class="quicklink-link">Terms of use</a>
+              </li>
 
-            <li>
-              <a href="#" class="quicklink-link">Privacy</a>
-            </li>
-          </ul>
+              <li>
+                <a href="#" class="quicklink-link">Privacy</a>
+              </li>
+            </ul>
 
-          <ul class="social-list">
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-facebook"></ion-icon>
-              </a>
-            </li>
+            <ul class="social-list">
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-twitter"></ion-icon>
-              </a>
-            </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-pinterest"></ion-icon>
-              </a>
-            </li>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
 
-            <li>
-              <a href="#" class="social-link">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a>
-            </li>
-          </ul>
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <p class="copyright">
-          &copy; 2023 <a href="#">Copyright belongs to group 58</a>
-        </p>
+      <div class="footer-bottom">
+        <div class="container">
+          <p class="copyright">
+            &copy; 2023 <a href="#">Copyright belongs to group 58</a>
+          </p>
 
-        <img src="./assets/images/footer-bottom-img.png" alt="Online banking companies logo"
-          class="footer-bottom-img" />
+          <img
+            src="./assets/images/footer-bottom-img.png"
+            alt="Online banking companies logo"
+            class="footer-bottom-img"
+          />
+        </div>
       </div>
-    </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
-  </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    </footer>
 
-  <!-- GO TO TOP -->
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up"></ion-icon>
-  </a>
-  <!-- library of pupup -->
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- GO TO TOP -->
+    <a href="#top" class="go-top" data-go-top>
+      <ion-icon name="chevron-up"></ion-icon>
+    </a>
+    <!-- library of pupup -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
-  <!-- custom js link-->
-  <script src="./assets/js/script.js"></script>
+    <!-- custom js link-->
+    <script src="./assets/js/script.js"></script>
 
-  <!--icon with ionicon link-->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--icon with ionicon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
-  <!-- link boostrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-    crossorigin="anonymous"></script>
-</body>
-
+    <!-- link boostrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
