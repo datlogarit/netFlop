@@ -13,7 +13,9 @@ main{
     width: 100%;
     display: flex;
     flex-direction: row;
-    box-shadow: 0px 0px 10px 5px rgba(211, 190, 190, 0.3);
+    border: 1px rgb(36, 42, 67) solid;
+    background-color: #242d33;
+    /* box-shadow: 4px 4px 10px 5px rgba(227, 216, 3, .2); */
     border-radius: 6px;
     margin: 15px auto;
 }
