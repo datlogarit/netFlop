@@ -762,20 +762,14 @@ body.active {
  * #TOP RATED
 \*-----------------------------------*/
 .control-inf-rate-star-star {
-  /* display: flex; */
-  /* justify-content: center; */
   align-self: center;
   margin-right: 2px;
   color: var(--citrine);
 }
-
 .control-inf-rate-star-star span {
   color: var(--citrine);
 }
 
-/* .dropend{
-  color: #fff;
-} */
 .fa-solid.fa-circle-exclamation {
   color: #fff;
   font-size: 25px;
@@ -1682,18 +1676,35 @@ body.active {
   margin-right: 10px;
 }
 
-/* rating by stars */
-.stars i {
-  color: #e6e6e6;
-  font-size: 20px;
-  cursor: pointer;
-  transition: color 0.2s ease;
+
+/* STAR RATING */
+.rating-all{
+  display: flex;
+  margin-bottom: 10px;
+}
+.rating-all h5{
+  color: #333;
+  margin:0px 30px 0 0;
+  align-self: center;
+}
+.rating {
+  unicode-bidi: bidi-override;
+  direction: ltr; /* Change direction to left-to-right */
+  /* text-align: left; */
+  
 }
 
-.stars i.active {
-  /* color: #ff9c1a; */
-  color: var(--citrine);
+.star {
+  /* display: inline-block; */
+  margin-right: 10px;
+  color: gold;
+  cursor: pointer;
+  font-size: 35px;
+  /* margin-right: 3px; */
 }
+/* -----------+++----- */
+
+
 
 /* config for media img */
 .media-img {
@@ -1793,7 +1804,7 @@ body.active {
   object-fit: cover;
   user-select: none;
   margin-left: 14px;
-  width: calc(100% / 3);
+  /* width: calc(100% / 3); */
   border-radius: 4px;
 }
 
@@ -1843,15 +1854,22 @@ body.active {
 .card.card-body {
   display: flex;
   flex-direction: row;
-  height: 430px;
-  /* overflow: hidden; */
+  width: 100%;
 }
-
+#textarea-cmt{
+  width: 100%;
+  padding: 10px 10px;
+  border: 1px solid #ced4da;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 3px;
+  /* height: 10px; */
+}
 .form-popup {
   display: flex;
   justify-items: center;
   align-items: center;
-  width: 69%;
+  width: 100%;
   margin-left: 20px;
 }
 
@@ -1998,7 +2016,7 @@ body.active {
 }
 
 .add-cmt {
-  width: fit-content;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -2025,8 +2043,7 @@ body.active {
   padding: 20px auto;
   border-radius: 3px;
   /* z-index: 10; */
-  box-shadow: 0 0 3px 4px rgba(215, 206, 206, 0.3);
-  /* box-shadow: 2px 2px 1px #444040; */
+  box-shadow: 1px 1px 3px 1px rgba(215, 206, 206, 0.3);
 }
 
 .cmt-of-user-box {
@@ -2126,9 +2143,10 @@ body.active {
 
 /* Add styles to the form container */
 .form-container {
-  /* width: 500px; */
   padding: 10px;
   background-color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 .form-popup-report .form-container-report {
@@ -2141,20 +2159,17 @@ body.active {
 
 /* Full-width input fields */
 
-.form-container textarea {
-  padding: 10px 10px;
-}
 
 /* Set a style for the submit/login button */
 .form-container .btn-form-review {
-  margin: 15px auto;
+  margin: 10px auto;
   background-color: #333;
   color: var(--citrine);
   padding: 16px 30px;
   border: none;
   cursor: pointer;
-  width: 60%;
-  border-radius: 5px;
+  width: 30%;
+  border-radius: 10px;
 }
 
 .form-container .btn-form-review:hover {
@@ -2178,11 +2193,8 @@ body.active {
 .form-container .btn:hover {
   opacity: 1;
 }
-
-.form-container textarea {
-  border: 1px solid #ced4da;
-  font-size: 20px;
-  font-weight: 300;
+.form-container{
+  width: 100%;
 }
 
 .form-container textarea:is(:focus, :hover) {

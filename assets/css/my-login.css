@@ -121,11 +121,11 @@ body {
 	color: #fff;
 }
 .form-control:is(:hover, :focus){
-	border: 1px #fff solid;
+	/* border: 1px #fff solid; */
 	background-color: transparent;
 	color: #fff;
 }
-.my-login-page .form-group label {
+.my-login-page .my-form-group label {
 	width: 100%;
 }
 .my-login-page .btn.btn-block {

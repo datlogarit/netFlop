@@ -132,22 +132,35 @@ window.onclick = function (e) {
 }
 
 
-// rating by stars
-// Select all elements with the "i" tag and store them in a NodeList called "stars"
-const stars = document.querySelectorAll(".stars i");
+// Replace the 5 with your initial rating value
+let ratingValue = 0;
+  
+const ratingContainer = document.getElementById('rating-container');
 
-// Loop through the "stars" NodeList
-stars.forEach((star, index1) => {
-  // Add an event listener that runs a function when the "click" event is triggered
-  star.addEventListener("click", () => {
-    // Loop through the "stars" NodeList Again
-    stars.forEach((star, index2) => {
-      // Add the "active" class to the clicked star and any stars with a lower index
-      // and remove the "active" class from any stars with a higher index
-      index1 >= index2 ? star.classList.add("active") : star.classList.remove("active");
-    });
-  });
-});
+// Function to create stars based on the rating value
+function createStars() {
+  ratingContainer.innerHTML = ''; // Clear previous stars
+
+  for (let i = 1; i <= 10; i++) {
+    const star = document.createElement('span');
+    star.className = 'star';
+    star.innerHTML = (i <= ratingValue) ? '★' : '☆';
+    star.addEventListener('click', () => setRating(i));
+    ratingContainer.appendChild(star);
+  }
+}
+
+// Function to set the rating value
+function setRating(value) {
+  ratingValue = value;
+  console.log(ratingValue);
+  createStars();
+}
+
+// Initial creation of stars
+createStars();
+
+
 
 
 //  side media
@@ -229,7 +242,7 @@ carousel.addEventListener("touchend", dragStop);
 // cmt without login
 function userNeedLogin() {
   Swal.fire({
-    title: "You must login to rate",
+    title: "You must login",
     // text: "You must login to rate",
     icon: "error"
   });
@@ -270,37 +283,25 @@ function closeForm() {
   document.getElementById("myForm").style.display = "none";
 }
 
-// show more cmt
+// function showMore() {
+//   console.log('show more is actived')
+//   var more = document.getElementsByClassName("cmt-of-user-box more-cmt");
+//   var moreIcon = document.getElementById("btnmore")
+//   for (let i = 0; i < more.length; i++) {
+//     if (more[i].style.display === "none") {//nếu dots không đc hiển thị
+//       more[i].style.display = "block";// thì dot hiển thị ở dạng inline
+//     } else {
+//       more[i].style.display = "none";
+//       //btnText.innerHTML = "Read less"; 
+//       //moreText.style.display = "inline";
+//     }
+//   }
 
-// var btnMoreLess =  document.getElementById("myBtn-more-less")
-// btnMoreLess.addEventListener("click", showMore)
-// btnMoreLess.addEventListener("click", changeIcon)
 // }
-function showMore() {
-  console.log('show more is actived')
-  var more = document.getElementsByClassName("cmt-of-user-box more-cmt");
-  var moreIcon = document.getElementById("btnmore")
-  for (let i = 0; i < more.length; i++) {
-    if (more[i].style.display === "none") {//nếu dots không đc hiển thị
-      more[i].style.display = "block";// thì dot hiển thị ở dạng inline
-    } else {
-      more[i].style.display = "none";
-      //btnText.innerHTML = "Read less"; 
-      //moreText.style.display = "inline";
-    }
-  }
 
-}
-// function changeIcon(iconChange) {
-//   iconChange.closest('.wrapper-more-less').classList.toggle('active-more-less');
-// }
 
 
 // bonus js
-function receive() {
-  alert("You have become a member of Netflop");
-}
-
 function mark_readed(element){
   element.style.backgroundColor = "rgba(136, 136, 136, 0.09)"; 
 }

@@ -34,12 +34,10 @@ main .title {
     width: 22%;
     /* padding-left: 25px; */
     margin: 15px 12px;
-    /* background-color: #384750; */
-    /* background-color:#fff; */
     border-radius: 2px;
     color: black;
     border-radius: 10px;
-     box-shadow:  0px 0px 10px 5px rgba(211, 190, 190, 0.3);
+    box-shadow:  1px 1px 10px 1px rgba(211, 190, 190, 0.3);
 
 }
 
@@ -54,7 +52,7 @@ main .title {
     border-radius: 3px;
     background-color: #242d33;
     color: #ddd;
-    margin: 30px 20px 0px 50px;
+    margin: 45px 20px 0px 50px;
 }
 
 .suggest-content .menu-option {
@@ -114,7 +112,11 @@ main .title {
 main .next-page {
     margin: auto 540px;
 }
-
+.number-page.current-page{
+    padding-inline: 4px;
+    border-bottom: 2px solid hsl(57, 97%, 45%); /* Độ dày và màu sắc của gạch chân */
+    display: inline;
+}
 main .next-page .next-page-control {
     display: flex;
     flex-direction: row;
