@@ -23,6 +23,8 @@ main{
 }
 .wrapper-cpn img{
     height: 100%;
+    width: 113px;
+    object-fit: cover;
     border-radius: 6px;
 }
 .wrapper-cpn-text{

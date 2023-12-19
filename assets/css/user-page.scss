@@ -1,0 +1,193 @@
+.nar-inf {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    align-items: center;
+    font-size: 35px;
+    margin-top: 120px;
+    background: url(https://img6.thuthuatphanmem.vn/uploads/2022/03/15/background-ngay-khai-giang_091500386.jpg);
+    background-size: cover;
+    height: 100px;
+    padding-left: 10%;
+
+    h5 {
+        margin: auto 15px;
+    }
+}
+
+.body-inf {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    .suggest-content {
+        width: 25%;
+        height: fit-content;
+        padding: 20px 20px;
+        border-radius: 3px;
+        background-color: #242d33;
+        color: #ddd;
+        margin: 40px 20px 0px 50px;
+        .option {
+            margin-left: 20px;
+            margin-top: 20px;
+            font-size: 18px;
+            position: relative;
+            .social-list{
+                column-gap: normal;
+                flex-wrap: nowrap;
+                padding-left: 0;
+                justify-content: start;
+                gap: 0px 10px;
+                margin-bottom: 0px;
+            }
+            a {
+                color: #ddd;
+                margin-top: 10px;
+            }
+        }
+
+        .menu-option {
+            display: flex;
+            flex-direction: row;
+            margin-left: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px hsl(57, 97%, 45%) solid;
+
+            h5 {
+                font-size: 30px;
+            }
+            i {
+                font-size: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 7px;
+            }
+        }
+    }
+
+    .content {
+        color: #fff;
+        margin-top: 40px;
+        width: 74%;
+        .information {
+            .control-information {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: 10px;
+                input{
+                    background-color: transparent;
+                    color: #fff;
+                    width: 400px;
+                    border: 1px rgba(255, 255, 255, .4) solid;
+                    border-radius: 3px;
+                    padding:5px 10px;
+                }
+                h6 {
+                    margin: auto 10px;
+                }
+
+                p {
+                    margin: auto 0px;
+                    font-size: 15px;
+                    font-weight: 400;
+                }
+                .btn-edit{
+                    background-color: #ddd;
+                    color: #242d33;
+                    padding:5px 10px;
+                    margin-left: 20px;
+                    margin-right: 20%;
+                    border-radius: 1px;
+                }
+            }
+            .control-information.can-edit{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .control-information-if{
+                    display: flex;
+                }
+            }
+        }
+        .favorite{
+            width: 100%;
+        }
+        .change-inf{
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            background-color: rgb(81, 145, 124);
+            padding: 5px 25px;
+            border-radius: 7px;
+            margin:20px 0px;
+        }
+        .change-inf:hover{
+            background-color: rgb(55, 97, 83);
+        }
+    }
+}
+
+.wrapper {
+    margin-top: 10px;
+    display: flex;
+    width: 95%;
+    position: relative;
+    i {
+        top: 50%;
+        height: 44px;
+        width: 44px;
+        color: #343F4F;
+        cursor: pointer;
+        font-size: .5rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background: #fff;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        transition: transform 0.1s linear;
+    }
+    i:active{
+        transform: translateY(-50%) scale(0.9);
+    }
+    i:hover{
+        background: #f2f2f2;
+    }
+    i:first-child{
+        left: -22px;
+        display: none;
+    }
+    i:last-child{
+        right: -22px;
+    }
+    .carousel{
+        font-size: 0px;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+        p{
+           color: red;
+        }
+        img{
+            height: 200px;
+            object-fit: cover;
+            user-select: none;
+            margin-left: 14px;
+            // width: calc(100% / 3);
+        }
+        img:first-child{
+            margin-left: 0px;
+        }
+    }
+    .carousel.dragging{
+        cursor: grab;
+        scroll-behavior: auto;
+        img{
+            pointer-events: none;
+        }
+    }
+}
