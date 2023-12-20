@@ -1,5 +1,22 @@
 $citrine: rgb(227, 216, 3);
-
+$mobile-width: 500px;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
 .nar-inf {
     width: 100%;
     display: flex;
@@ -72,7 +89,13 @@ $citrine: rgb(227, 216, 3);
         background-color: #242d33;
         color: #ddd;
         margin: 40px 20px 0px 50px;
-
+        @include mobile(){
+            display: none;
+        }
+        @include tablet(){
+            font-size: 12px;
+            padding:20px 10px
+        }
         .option {
             margin-left: 20px;
             margin-top: 20px;
@@ -154,8 +177,6 @@ $citrine: rgb(227, 216, 3);
                     border: 1px rgba(255, 255, 255, .4) solid;
                     border-radius: 3px;
                     padding: 5px 10px;
-                    // height: 10px;
-                    // line-height: 30px;
                 }
 
                 h6 {
@@ -208,14 +229,19 @@ $citrine: rgb(227, 216, 3);
         }
 
         .body-report-request {
+
             .row {
                 padding-bottom: 5px;
+                @include mobile(){
+                    p{
+                        font-size: 10px;
+                    }
+                }
             }
 
             .row.row-title {
                 margin-bottom: 10px;
             }
-
             .inf-user-report {
                 display: flex;
                 font-size: 17px;
@@ -243,6 +269,10 @@ $citrine: rgb(227, 216, 3);
                     padding: 5px 10px;
                     border-radius: 3px;
                     margin-right: 15px;
+                    @include mobile(){
+                        padding: 2px 5px;
+                        font-size: 10px;
+                    }
                 }
             }
         }

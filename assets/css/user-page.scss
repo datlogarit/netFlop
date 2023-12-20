@@ -1,4 +1,24 @@
-$mobile: 500px;
+$mobile-width: 500px;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
 
 .nar-inf {
     display: flex;
@@ -30,7 +50,7 @@ $mobile: 500px;
         background-color: #242d33;
         color: #ddd;
         margin: 40px 20px 0px 50px;
-        @include mobile {
+        @include mobile(){
             display: none;
         }
         .option {
@@ -93,6 +113,9 @@ $mobile: 500px;
                     border: 1px rgba(255, 255, 255, .4) solid;
                     border-radius: 3px;
                     padding: 5px 10px;
+                    @include mobile(){
+                        width: 200px;
+                    }
                 }
 
                 h6 {

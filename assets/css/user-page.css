@@ -29,6 +29,11 @@
   color: #ddd;
   margin: 40px 20px 0px 50px;
 }
+@media (max-width: 499px) {
+  .body-inf .suggest-content {
+    display: none;
+  }
+}
 .body-inf .suggest-content .option {
   margin-left: 20px;
   margin-top: 20px;
@@ -82,6 +87,11 @@
   border: 1px rgba(255, 255, 255, 0.4) solid;
   border-radius: 3px;
   padding: 5px 10px;
+}
+@media (max-width: 499px) {
+  .body-inf .content .information .control-information input {
+    width: 200px;
+  }
 }
 .body-inf .content .information .control-information h6 {
   margin: auto 10px;
@@ -188,4 +198,3 @@
 .wrapper .carousel.dragging img {
   pointer-events: none;
 }/*# sourceMappingURL=user-page.css.map */
-
