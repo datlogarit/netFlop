@@ -1,3 +1,5 @@
+$mobile: 500px;
+
 .nar-inf {
     display: flex;
     flex-direction: row;
@@ -19,6 +21,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+
     .suggest-content {
         width: 25%;
         height: fit-content;
@@ -27,12 +30,16 @@
         background-color: #242d33;
         color: #ddd;
         margin: 40px 20px 0px 50px;
+        @include mobile {
+            display: none;
+        }
         .option {
             margin-left: 20px;
             margin-top: 20px;
             font-size: 18px;
             position: relative;
-            .social-list{
+
+            .social-list {
                 column-gap: normal;
                 flex-wrap: nowrap;
                 padding-left: 0;
@@ -40,6 +47,7 @@
                 gap: 0px 10px;
                 margin-bottom: 0px;
             }
+
             a {
                 color: #ddd;
                 margin-top: 10px;
@@ -56,6 +64,7 @@
             h5 {
                 font-size: 30px;
             }
+
             i {
                 font-size: 20px;
                 display: flex;
@@ -70,19 +79,22 @@
         color: #fff;
         margin-top: 40px;
         width: 74%;
+
         .information {
             .control-information {
                 display: flex;
                 flex-direction: row;
                 margin-bottom: 10px;
-                input{
+
+                input {
                     background-color: transparent;
                     color: #fff;
                     width: 400px;
                     border: 1px rgba(255, 255, 255, .4) solid;
                     border-radius: 3px;
-                    padding:5px 10px;
+                    padding: 5px 10px;
                 }
+
                 h6 {
                     margin: auto 10px;
                 }
@@ -92,37 +104,43 @@
                     font-size: 15px;
                     font-weight: 400;
                 }
-                .btn-edit{
+
+                .btn-edit {
                     background-color: #ddd;
                     color: #242d33;
-                    padding:5px 10px;
+                    padding: 5px 10px;
                     margin-left: 20px;
                     margin-right: 20%;
                     border-radius: 1px;
                 }
             }
-            .control-information.can-edit{
+
+            .control-information.can-edit {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
-                .control-information-if{
+
+                .control-information-if {
                     display: flex;
                 }
             }
         }
-        .favorite{
+
+        .favorite {
             width: 100%;
         }
-        .change-inf{
+
+        .change-inf {
             color: #fff;
             font-size: 20px;
             font-weight: 500;
             background-color: rgb(81, 145, 124);
             padding: 5px 25px;
             border-radius: 7px;
-            margin:20px 0px;
+            margin: 20px 0px;
         }
-        .change-inf:hover{
+
+        .change-inf:hover {
             background-color: rgb(55, 97, 83);
         }
     }
@@ -133,6 +151,7 @@
     display: flex;
     width: 95%;
     position: relative;
+
     i {
         top: 50%;
         height: 44px;
@@ -148,20 +167,25 @@
         transform: translateY(-50%);
         transition: transform 0.1s linear;
     }
-    i:active{
+
+    i:active {
         transform: translateY(-50%) scale(0.9);
     }
-    i:hover{
+
+    i:hover {
         background: #f2f2f2;
     }
-    i:first-child{
+
+    i:first-child {
         left: -22px;
         display: none;
     }
-    i:last-child{
+
+    i:last-child {
         right: -22px;
     }
-    .carousel{
+
+    .carousel {
         font-size: 0px;
         display: flex;
         flex-direction: row;
@@ -169,24 +193,29 @@
         overflow: hidden;
         white-space: nowrap;
         scroll-behavior: smooth;
-        p{
-           color: red;
+
+        p {
+            color: red;
         }
-        img{
+
+        img {
             height: 200px;
             object-fit: cover;
             user-select: none;
             margin-left: 14px;
             // width: calc(100% / 3);
         }
-        img:first-child{
+
+        img:first-child {
             margin-left: 0px;
         }
     }
-    .carousel.dragging{
+
+    .carousel.dragging {
         cursor: grab;
         scroll-behavior: auto;
-        img{
+
+        img {
             pointer-events: none;
         }
     }
