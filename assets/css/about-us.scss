@@ -1,3 +1,22 @@
+$mobile-width: 500px;
+$tablet-width: 768px;
+$desktop-width: 1024px; 
+@mixin mobile {
+    @media (max-width: #{$mobile-width - 1px}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        @content;
+    }
+}
+
 .title-about-us{
     text-align: center;
     margin-top: 150px;
@@ -15,6 +34,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    @include mobile(){
+        display: grid;
+    }
     .card{
         margin-top: 30px;
         height: 350px;
@@ -24,6 +47,7 @@
         text-align: center;
         align-items: center;
         position: relative;
+        
         .avt{
             width: 100px;
             height: 100px;
@@ -83,9 +107,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    @include mobile(){
+        flex-direction: column;
+        justify-content: center;
+        
+    }
     .control-about-web{
         color: #fff;
         width: 45%;
+        @include mobile(){
+            width: 100%;
+            text-align: center;
+        }
         h4{
             text-align: center;
         }

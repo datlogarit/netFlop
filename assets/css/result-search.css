@@ -82,3 +82,21 @@ main{
 .suggest-content .option a:hover {
     color: hsl(57, 97%, 45%);
 }
+@media (max-width:500px){
+    .suggest-content{
+        display: none;
+    }
+    .wrapper-all-cpn{
+        width: 100%;
+    }
+    .wrapper-cpn-text-name h4{
+        font-size: 20px;
+    }
+    .wrapper-cpn-text{
+        justify-content: space-between;
+        overflow: scroll;
+    }
+    .wrapper-cpn-text p{
+        font-size: 12px;
+    }
+}

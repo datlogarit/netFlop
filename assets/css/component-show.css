@@ -146,10 +146,25 @@ main .next-page .next-page-control a {
     padding: 0px 3px;
 }
 @media screen and (max-width:550px) {
+    section{width: 100vw;}
     .suggest-content{
         display: none;
     }
     .wrapper-all-show{
         width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .show-component{
+        width: 40%;
+    }
+    .badge.badge-outline{
+        display: none;
+    }
+    .title-wrapper{
+        flex-direction: column;
+    }
+    .title-wrapper .card-title{
+        font-size: 14px;
     }
 }
