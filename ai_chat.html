@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-[#242526]">
+    <html>
+      <header>
+        <title>Mobile Chat Layout</title>
+      </header>
+      <body >
+        <div style="overscroll-behavior: none">
+          <div
+            class="fixed w-full bg-[#e3d803] h-16 pt-1 text-white flex shadow-md justify-between px-4"
+            style="top: 0px; overscroll-behavior: none"
+          >
+            <!-- back button -->
+            <i class="fa-solid fa-arrow-left text-black my-auto text-[20px]"></i>
+            <div class="my-3 text-[#333] font-bold text-2xl tracking-wide">
+              @Netflop
+            </div>
+            <!-- 3 dots -->
+            
+          </div>
+
+          <div class="mt-20 mb-16 text-white">
+            <div
+              class="text-[18px] font-medium mx-auto w-[50%] text-center shadow-lg p-1 mt-[20px] mb-[50px]"
+            >
+              <h4 class="text-[23px] font-bold mb-1">AI chat</h4>
+              This tool helps you see more information about your favorite
+              movies and shows. Please enter input to search. you can also ask
+              anything with it
+            </div>
+            <div class="clearfix flex">
+              <i class="fa-solid fa-robot flex items-center ml-3"></i>
+              <div
+                class="bg-[#303030] w-3/4 mx-4 my-2 p-2 rounded-lg"
+                id="myTextContainer"
+              >
+                this is a basic mobile chat layout, build with tailwind
+                css.JavaScript is the world's most popular programming language.
+                JavaScript is the programming language of the Web. JavaScript is
+                easy to learn. This tutorial will teach you JavaScript from
+                basic to advanced.
+              </div>
+            </div>
+
+            <div class="clearfix flex">
+              <i class="fa-solid fa-robot flex items-center ml-3"></i>
+              <div class="bg-[#303030] w-3/4 mx-4 my-2 p-2 rounded-lg clearfix">
+                It will be used for a full tutorial about building a chat app
+                with vue, tailwind and firebase.
+              </div>
+            </div>
+            <div class="clearfix flex flex-row-reverse">
+              <i class="fa-solid fa-user flex items-center mr-3"></i>
+              <div
+                class="bg-[#0084ff] float-right w-3/4 mx-4 my-2 p-2 rounded-lg clearfix"
+              >
+                check my twitter to see when it will be released.JavaScript is
+                the world's most popular programming language. JavaScript is the
+                programming language of the Web. JavaScript is easy to learn.
+                This tutorial will teach you JavaScript from basic to advanced.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="fixed w-full flex justify-between"
+          style="bottom: 0px"
+        >
+          <textarea
+            class="text-[#fff] flex-grow m-2 py-2 px-4 mr-1 rounded-full border border-gray-300 bg-[#3a3b3c] resize-none hover:border-[#fff]  focus:border-[#fff]"
+            rows="1"
+            placeholder="Type the name of the movie you want to search"
+            style="outline: none"
+          ></textarea>
+          <button class="m-2" style="outline: none">
+            <svg
+              class="svg-inline--fa text-[#0084ff] fa-paper-plane fa-w-16 w-12 h-12 py-2 mr-2"
+              aria-hidden="true"
+              focusable="false"
+              data-prefix="fas"
+              data-icon="paper-plane"
+              role="img"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+            >
+              <path
+                fill="currentColor"
+                d="M476 3.2L12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"
+              />
+            </svg>
+          </button>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,27 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/test.css">
-  </head>
-  <body>
-    <div class="card">
-        <div class="photo"></div>
-        <div class="banner"></div>
-        <ul>
-            <li><b>John Doe</b></li>
-            <li>Web Developer</li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Copy Multiple Texts to Clipboard</title>
+</head>
+<body>
 
-        </ul>
-        <button class="contact" id="main-button">click to get in touch</button>
-        <div class="social-media-banner">
-            <a href=""><i class="fa-brands fa-twitter"></i></a>
-            <a href=""><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-instagram"></i></a>
-            <a href=""><i class="fa fa-linkedin"></i></a>
-        </div>
-      </div>
-      <script src="./js/test.js"></script>
+<div class="textContainer" id="textContainer1">
+  <p>This is the first text to copy.</p>
+</div>
+
+<div class="textContainer" id="textContainer2">
+  <p>This is the second text to copy.</p>
+</div>
+
+<button onclick="copyAllToClipboard()">Copy All to Clipboard</button>
+
+<script>
+  function copyTextToClipboard(text) {
+    // Tạo một textarea tạm thời để có thể sao chép nội dung vào clipboard
+    var tempTextArea = document.createElement("textarea");
+    tempTextArea.value = text;
+    document.body.appendChild(tempTextArea);
+
+    // Chọn và sao chép nội dung từ textarea
+    tempTextArea.select();
+    document.execCommand("copy");
+
+    // Xóa textarea tạm thời
+    document.body.removeChild(tempTextArea);
+  }
+
+  function copyAllToClipboard() {
+    // Lấy tất cả các phần tử có class "textContainer"
+    var textContainers = document.getElementsByClassName("textContainer");
+
+    // Lặp qua từng phần tử và sao chép nội dung của chúng
+    for (var i = 0; i < textContainers.length; i++) {
+      var textContent = textContainers[i].textContent || textContainers[i].innerText;
+      copyTextToClipboard(textContent);
+    }
+
+    // Thông báo hoặc thực hiện các hành động khác sau khi sao chép thành công
+    alert("All texts copied to clipboard!");
+  }
+</script>
+
 </body>
 </html>
